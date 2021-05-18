@@ -1,0 +1,36 @@
+2021-05-12T21:03:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function blockchain_lite_replace_the_title(), 1 passed in /var/www/techarima/wp-includes/class-wp-hook.php on line 292 and exactly 2 expected in /var/www/techarima/wp-content/themes/blockchain-lite/inc/default-hooks.php:60
+Stack trace:
+#0 /var/www/techarima/wp-includes/class-wp-hook.php(292): blockchain_lite_replace_the_title()
+#1 /var/www/techarima/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/techarima/wp-content/plugins/awesome-support/includes/admin/metaboxes/user-profile.php(146): apply_filters()
+#3 /var/www/techarima/wp-content/plugins/awesome-support/includes/admin/functions-metaboxes.php(91): include_once('/var/www/techar...')
+#4 /var/www/techarima/wp-admin/includes/template.php(1389): wpas_metabox_callback()
+#5 /var/www/techarima/wp-admin/edit-form-advanced.php(681): do_meta_boxes()
+#6 /var/www/techarima/wp-admin/post.php(206): require('/var/www/techar...')
+#7 {main}
+  thrown in /var/www/techarima/wp-content/themes/blockchain-lite/inc/default-hooks.php on line 60
+
+2021-05-12T21:03:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function blockchain_lite_replace_the_title(), 1 passed in /var/www/techarima/wp-includes/class-wp-hook.php on line 292 and exactly 2 expected in /var/www/techarima/wp-content/themes/blockchain-lite/inc/default-hooks.php:60
+Stack trace:
+#0 /var/www/techarima/wp-includes/class-wp-hook.php(292): blockchain_lite_replace_the_title()
+#1 /var/www/techarima/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/techarima/wp-content/plugins/awesome-support/includes/admin/metaboxes/user-profile.php(146): apply_filters()
+#3 /var/www/techarima/wp-content/plugins/awesome-support/includes/admin/functions-metaboxes.php(91): include_once('/var/www/techar...')
+#4 /var/www/techarima/wp-admin/includes/template.php(1389): wpas_metabox_callback()
+#5 /var/www/techarima/wp-admin/edit-form-advanced.php(681): do_meta_boxes()
+#6 /var/www/techarima/wp-admin/post.php(206): require('/var/www/techar...')
+#7 {main}
+  thrown in /var/www/techarima/wp-content/themes/blockchain-lite/inc/default-hooks.php on line 60
+
+2021-05-12T21:03:33+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function blockchain_lite_replace_the_title(), 1 passed in /var/www/techarima/wp-includes/class-wp-hook.php on line 292 and exactly 2 expected in /var/www/techarima/wp-content/themes/blockchain-lite/inc/default-hooks.php:60
+Stack trace:
+#0 /var/www/techarima/wp-includes/class-wp-hook.php(292): blockchain_lite_replace_the_title()
+#1 /var/www/techarima/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /var/www/techarima/wp-content/plugins/awesome-support/includes/admin/metaboxes/user-profile.php(146): apply_filters()
+#3 /var/www/techarima/wp-content/plugins/awesome-support/includes/admin/functions-metaboxes.php(91): include_once('/var/www/techar...')
+#4 /var/www/techarima/wp-admin/includes/template.php(1389): wpas_metabox_callback()
+#5 /var/www/techarima/wp-admin/edit-form-advanced.php(681): do_meta_boxes()
+#6 /var/www/techarima/wp-admin/post.php(206): require('/var/www/techar...')
+#7 {main}
+  thrown in /var/www/techarima/wp-content/themes/blockchain-lite/inc/default-hooks.php on line 60
+

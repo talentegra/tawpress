@@ -1,0 +1,131 @@
+Curriculum requirement
+ 
+
+1.Cryptography topics
+
+Origins of Cryptography
+Various schemes in Cryptography
+Elliptical Curve for Cryptography
+Digital Signature (ECDSA)
+Hash Function in Cryptography
+
+
+2.Cryptocurrency
+
+Introduction to Cryptocurrency
+Use-cases of Cryptocurrency
+Hash Functions, Pointers, Data Structure
+Addresses and Private Keys
+Summarize
+Assignment
+
+
+3.Introduction to Blockchain
+
+Blockchain and its evolution
+Key Terminologies used in blockchain
+Enterprise Blockchain vs. Cryptocurrency
+Blockchain – Architecture and Data Model
+Popular Blockchain and their comparison
+Blockchain use-cases
+Summarize
+Assignment
+
+
+4.Bitcoin Architecture
+
+Bitcoin Currency and its Origin
+Distributed Consensus
+Anonymity and Pseudonymity
+Incentives and Proof-of-Work
+Wallet
+Ecosystem
+Summary
+Assignment
+
+
+5.Bitcoin Transactions
+
+Transaction Flow
+Transaction Data Structure and Verification
+Transaction Scripts and Use-cases
+Bitcoin Network
+Limitations of Bitcoin Blockchain
+Summary
+Assignment
+
+
+6. Ethereum
+
+Etherium and Its Concepts
+Solidity
+Gas
+Ether
+Ethereum Virtual Machine
+Types of Ethereum Accounts
+Ethereum Mining
+Ethereum Ecosystem
+Remix - demo
+Truffle - demo
+Gnanace - demo
+MetaMask - demo
+Overview of other Ethereum Frameworks
+Ethereum DAPPs and DAOs
+Sample use-case design considerations - web application
+Summary
+Assignment
+
+
+7.Hyperledger Architecture
+
+Hyperledger Fabric Introduction
+Fabric Architecture & Data Models
+Key Concepts in Hyperledger Fabric - Peer, orderer, YAML, Node, Docker, couchDb
+Smart contract (Java or javascript)
+Permissioned Blockchain and Its Consensus Model
+Consensus and Its Interaction with Architectural Layers
+API and Network Topology in Hyperledger
+Steps to Create a Hyperledger Network
+Detailed Transaction Flow
+Hyperledger Use-cases
+Security
+Overview of other hyperledger frameworks - Sawtooth, Iroha, Indy
+Sample use-case design considerations
+
+
+8.Hyperledger fabric administration
+
+CA level functions
+Manage Peers
+Administration of identities
+network topology
+Permissions
+Configurations
+
+
+9.Blockchain web application
+
+REST server to design a web based aplication
+Sample use-case design considerations - Complete cycle including Frontend, Middleware, smart contract. (using vuejs, angular or reactjs)
+
+
+10.Blockchain on Multichain
+
+Multichain Architecture
+The Hand-Shaking Process
+Permission in Multichain
+Features of Assets in Multichain
+Multichain Streams
+Consensus
+Mining
+Multichain Flexibility, Speed and Scalability
+
+
+11.Install a sample app
+
+Import the app created into the fabric
+Deploy the app
+Execute the app through CLI
+BaaS
+Kubernettes
+Summary and key takeaway

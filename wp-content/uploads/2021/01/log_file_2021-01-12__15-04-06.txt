@@ -1,0 +1,14 @@
+
+---Upload files---
+Redux file was not uploaded. Error: Specified file failed upload test.
+
+---Upload files---
+The import files were successfully uploaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://techarima.com
+Data file = /var/www/techarima/wp-content/uploads/2021/01/content.xml
+Widget file = /var/www/techarima/wp-content/uploads/2021/01/widgets.wie
+Customizer file = /var/www/techarima/wp-content/uploads/2021/01/customizer.dat
+Redux files:
+not defined!

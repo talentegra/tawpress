@@ -1,0 +1,16 @@
+.elementor-widget-ep-heading {
+	.elementor-heading-title {
+		display: flex;
+		margin-bottom: 0;
+
+		a {
+			display: flex;
+		}
+
+		span {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+}

@@ -3822,3 +3822,331 @@
 [2021-05-23 21:42:05] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
 [2021-05-23 21:42:05] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
 [2021-05-23 21:42:05] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:20:43] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:20:44] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:20:44] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:20:44] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:21:12] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:21:22] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:21:23] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:21:23] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:22:17] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:22:19] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:22:20] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:22:20] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:22:39] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:22:45] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:22:45] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:22:45] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:22:47] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:22:51] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:22:51] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:22:51] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:22:58] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:23:01] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:23:01] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:23:01] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:23:16] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:23:20] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:23:20] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:23:20] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:23:47] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:23:48] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:23:48] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:23:48] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:24:11] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:24:14] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:24:14] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:24:14] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:24:41] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:24:47] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:24:47] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:24:47] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:25:12] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:25:23] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:25:23] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:25:23] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:25:42] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:25:47] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:25:47] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:25:47] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:25:49] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:25:53] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:25:53] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:25:53] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:26:00] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:26:08] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:26:08] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:26:08] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:26:19] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:26:23] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:26:23] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:26:23] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:26:27] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:26:32] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:26:32] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:26:32] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:26:33] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:26:34] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:26:34] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:26:34] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:26:40] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:26:42] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:26:42] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:26:42] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:26:47] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:26:48] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:26:49] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:26:49] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:26:55] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:27:05] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:27:05] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:27:05] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:27:54] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:27:58] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:27:58] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:27:58] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:29:22] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:30:20] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:30:20] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:30:20] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:43:31] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:43:45] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:43:45] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:43:45] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:44:35] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:44:38] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:44:38] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:44:38] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:47:08] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:47:09] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:47:09] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:47:09] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:48:28] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:48:35] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:48:35] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:48:35] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:48:50] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:48:52] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:48:52] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:48:52] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:48:57] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:48:58] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:48:58] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:48:58] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:49:49] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:49:50] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:49:50] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:49:50] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:49:59] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:50:08] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:50:08] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:50:08] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:50:30] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:50:43] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:50:43] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:50:43] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:50:56] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:50:58] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:50:58] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:50:58] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:51:01] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:51:12] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:51:12] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:51:12] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:51:13] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:51:28] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:51:28] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:51:28] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:51:33] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:51:35] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:51:35] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:51:35] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:51:50] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:51:55] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:51:56] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:51:56] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:52:34] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:52:35] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:52:35] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:52:35] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:52:38] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:52:41] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:52:41] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:52:41] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:52:54] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:52:58] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:52:59] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:52:59] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:58:40] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:58:43] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:58:44] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:58:44] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:58:48] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:58:49] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:58:49] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:58:49] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 11:59:38] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 11:59:48] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 11:59:48] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 11:59:48] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:00:36] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:00:38] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:00:38] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:00:38] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:05:05] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:05:08] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:05:09] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:05:09] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:11:43] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:11:44] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:11:44] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:11:44] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:11:57] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:11:58] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:11:58] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:11:58] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:11:59] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:12:00] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:12:01] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:12:01] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:14:56] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:14:58] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:14:59] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:14:59] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:15:27] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:15:30] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:15:30] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:15:30] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:15:55] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:15:56] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:15:56] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:15:56] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:16:25] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:16:33] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:16:33] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:16:33] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:16:39] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:16:40] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:16:40] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:16:40] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:16:42] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:16:48] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:16:48] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:16:48] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:16:49] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:16:53] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:16:53] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:16:53] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:17:18] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:18:43] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:18:43] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:18:43] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 12:41:08] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 12:41:09] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 12:41:09] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 12:41:09] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 18:18:00] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 18:18:01] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 18:18:01] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 18:18:01] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 18:18:10] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 18:18:12] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 18:18:12] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 18:18:12] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 18:21:46] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 18:21:46] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 18:21:46] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 18:21:46] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 18:22:54] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 18:22:55] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 18:22:55] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 18:22:55] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 18:23:26] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 18:23:36] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 18:23:36] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 18:23:36] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 18:23:40] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 18:23:41] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 18:23:42] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 18:23:42] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 18:23:43] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 18:23:46] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 18:23:46] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 18:23:46] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 19:04:47] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 19:04:49] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 19:04:49] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 19:04:49] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 19:05:25] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 19:05:28] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 19:05:29] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 19:05:29] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-26 19:56:24] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-26 19:56:29] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-26 19:56:29] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-26 19:56:29] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-27 16:30:15] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-27 16:30:19] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-27 16:30:19] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-27 16:30:19] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 10:57:40] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 10:57:43] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 10:57:43] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 10:57:43] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 10:58:11] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 10:58:13] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 10:58:14] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 10:58:14] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 10:59:05] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 10:59:08] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 10:59:08] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 10:59:08] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 11:00:23] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 11:00:26] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 11:00:26] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 11:00:26] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 11:03:02] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 11:03:13] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 11:03:13] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 11:03:13] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 11:05:06] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 11:05:13] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 11:05:13] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 11:05:13] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 11:06:41] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 11:06:44] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 11:06:44] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 11:06:44] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 11:06:58] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 11:07:13] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 11:07:14] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 11:07:14] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 11:07:46] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 11:07:57] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 11:07:57] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 11:07:57] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 18:07:41] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 18:07:43] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 18:07:43] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 18:07:43] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 18:08:27] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 18:08:31] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 18:08:31] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 18:08:31] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 18:08:38] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 18:08:40] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 18:08:41] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 18:08:41] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 18:08:43] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 18:08:56] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 18:08:56] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 18:08:56] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 18:09:59] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 18:10:10] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 18:10:10] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 18:10:10] [cache_controller::purge_cache_queue_job] Cache purging complete
+[2021-05-30 18:10:11] [cache_controller::purge_cache_queue_write] queue file not exist
+[2021-05-30 18:10:26] [cache_controller::purge_cache_queue_job] I'm the purge cache cronjob
+[2021-05-30 18:10:26] [cache_controller::purge_urls] Unable to purge some URLs from Cloudlare due to error: Could not route to /zones/purge_cache, perhaps your object identifier is invalid? (err code: 7003 ) - No route for that URI (err code: 7000 )
+[2021-05-30 18:10:26] [cache_controller::purge_cache_queue_job] Cache purging complete

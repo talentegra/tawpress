@@ -1,0 +1,8 @@
+@media (max-width: 767px){
+
+
+  ul.main-menu li ul {
+    position: relative;
+  }
+
+}

@@ -217,6 +217,19 @@ function rtec_get_venue( $event_id = NULL ) {
 		return '';
 	}
 }
+
+function rtec_get_events( $args, $show_hidden = true ) {
+
+	if ( ! function_exists( 'tribe_get_events' ) ) {
+		// TODO: Add workaround when events calendar is inactive
+		return array();
+	}
+	if ( $show_hidden ) {
+		$args['hide_upcoming'] = false;
+	}
+	return tribe_get_events( $args );
+}
+
 function rtec_get_parsed_custom_field_data( $raw_data ) {
 	global $rtec_options;
 
@@ -415,6 +428,12 @@ function rtec_get_start_date( $event_id, $date_format = 'Y-m-d H:i:s' ) {
 
 		return $start_date_meta[0];
 	}
+}
+
+function rtec_get_capability() {
+    $capability = 'edit_posts';
+
+	return $capability;
 }
 
 /**
@@ -678,6 +697,9 @@ function rtec_get_no_backend_column_fields() {
  */
 add_shortcode( 'rtec-registration-form', 'rtec_the_registration_form_shortcode' );
 function rtec_the_registration_form_shortcode( $atts ) {
+    if ( ! function_exists( 'tribe_is_event' ) ) {
+        return '';
+    }
     global $rtec_options;
 
     $atts = is_array( $atts ) ? $atts : array();
@@ -802,7 +824,7 @@ function rtec_the_attendee_list_shortcode( $atts ) {
 		$attendee_list_fields = apply_filters( 'rtec_attendee_list_fields', $to_include );
 		$registrants_data = $rtec->db_frontend->get_registrants_data( $event_meta, $attendee_list_fields );
 		ob_start();
-		echo '<div class="rtec-attendee-list-wrap">';
+		echo '<div class="rtec-attendee-list-wrap rtec-shortcode-attendee-list">';
 		if ( isset( $atts['showheader'] ) && $atts['showheader'] === 'true' ) {
 			$rtec->form->the_event_header();
 		}

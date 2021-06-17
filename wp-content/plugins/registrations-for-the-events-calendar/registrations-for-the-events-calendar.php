@@ -2,7 +2,7 @@
 /*
 Plugin Name: Registrations for The Events Calendar
 Description: Collect and manage event registrations with a customizable form and email template. This plugin requires The Events Calendar by Modern Tribe to work.
-Version: 2.6.2
+Version: 2.7.2
 Author: Roundup WP
 Author URI: roundupwp.com
 License: GPLv2 or later
@@ -10,7 +10,7 @@ Text Domain: registrations-for-the-events-calendar
 */
 
 /*
-Copyright 2020 by Roundup WP LLC
+Copyright 2021 by Roundup WP LLC
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -35,7 +35,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 if ( ! defined( 'ABSPATH' ) ) exit;
 // Plugin version.
 if ( ! defined( 'RTEC_VERSION' ) ) {
-	define( 'RTEC_VERSION', '2.6.2' );
+	define( 'RTEC_VERSION', '2.7.2' );
 }
 // Plugin Folder Path.
 if ( ! defined( 'RTEC_PLUGIN_DIR' ) ) {
@@ -45,25 +45,13 @@ if ( ! defined( 'RTEC_PLUGIN_DIR' ) ) {
 if ( ! defined( 'RTEC_PLUGIN_URL' ) ) {
 	define( 'RTEC_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 }
+
+if ( ! defined( 'RTEC_TEC_VER_STRING' ) ) {
+	define( 'RTEC_TEC_VER_STRING','.5.4.0.2' );
+}
+
 // Check for The Events Calendar to be active
 function rtec_TEC_check() {
-	if ( ! class_exists( 'Tribe__Events__Main' ) ) {
-		add_action( 'admin_notices', 'rtec_no_tec_notice' );
-		function rtec_no_tec_notice() {
-			?>
-            <div class="rtec-notice-all-admin rtec-all-admin-error">
-                <div class="rtec-img-wrap">
-                    <img src="<?php echo plugin_dir_url( __FILE__ ) . 'img/RTEC-Logo-150x150.png'; ?>" alt="Registrations for the Events Calendar">
-                </div>
-                <div class="rtec-msg-wrap">
-                    <p><?php _e( 'It looks like The Events Calendar plugin is not currently active.', 'registrations-for-the-events-calendar' ); ?></p>
-                    <p class="rtec-instructions"><?php _e( 'Please install The Events Calendar by Modern Tribe to get started with your registrations.', 'registrations-for-the-events-calendar' ); ?></p>
-                    <p><a href="https://roundupwp.com/products/registrations-for-the-events-calendar/setup/" target="_blank"><?php _e( 'Setup Instructions', 'registrations-for-the-events-calendar' ); ?></a></p>
-                </div>
-            </div>
-			<?php
-		}
-	}
 }
 add_action( 'plugins_loaded', 'rtec_TEC_check' );
 

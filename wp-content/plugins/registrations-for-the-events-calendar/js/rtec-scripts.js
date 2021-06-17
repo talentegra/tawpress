@@ -7,12 +7,16 @@ jQuery(document).ready(function($) {
 
             // move the form for backwards compatibility
             if ($('#rtec-js-move-flag').length
+                || $('.rtec-js-placement').length
                 || $('footer').find('.rtec').length
                 || $('footer').find('.rtec-outer-wrap').length
                 || $('footer').find('.rtec-success-message').length) {
 
                 var $moveEl = $('#rtec-js-move-flag'),
+                    rtecLocation = typeof $('.rtec-outer-wrap').attr('data-location') !== 'undefined' ? $('.rtec-outer-wrap').attr('data-location') : false;
+                if ( ! rtecLocation ) {
                     rtecLocation = typeof $('#rtec-js-move-flag').attr('data-location') !== 'undefined' ? $('#rtec-js-move-flag').attr('data-location') : 'tribe_events_single_event_before_the_content';
+                }
                 if ($('.rtec-outer-wrap.rtec-js-placement').length) {
                     $moveEl = $('.rtec-outer-wrap.rtec-js-placement');
                 } else if ($('.rtec').length) {
@@ -28,8 +32,23 @@ jQuery(document).ready(function($) {
                     } else {
                         $('.tribe-events-single-event-description').first().before($moveEl);
                     }
+                } else if ($('.tribe-events-single-section.tribe-events-event-meta').length
+                    && rtecLocation === 'tribe_events_single_event_after_the_content') {
+                    $('.tribe-events-single-section.tribe-events-event-meta').first().before($moveEl);
                 } else if ($('.tribe-events-schedule').length) {
-                    $('.tribe-events-schedule').first().after($moveEl);
+                    if (rtecLocation === 'tribe_events_single_event_after_the_content') {
+                        if ($('.tribe-block.tribe-block__event-price').prev('p').length) {
+                            $('.tribe-block.tribe-block__event-price').prev('p').after($moveEl);
+                        } else if ($('.tribe-block.tribe-block__organizer__details').prev('p').length) {
+                            $('.tribe-block.tribe-block__organizer__details').prev('p').after($moveEl);
+                        } else if ($('.tribe-block.tribe-block__venue').prev('p').length) {
+                            $('.tribe-block.tribe-block__venue').prev('p').after($moveEl);
+                        } else {
+                            $('.tribe-events-schedule').first().after($moveEl);
+                        }
+                    } else {
+                        $('.tribe-events-schedule').first().after($moveEl);
+                    }
                 } else if ($('.tribe-events-single .tribe_events').length) {
                     $('.tribe-events-single .tribe_events').first().prepend($moveEl);
                 } else if ($('.tribe-events-single h1').length) {
@@ -41,12 +60,15 @@ jQuery(document).ready(function($) {
                 if ($('.rtec-login-wrap').length) {
                     $('.rtec-login-wrap').each(function() {
                         var $context = $(this).closest($('.tribe-events-single'));
-                        $context.find('.rtec-success-message').first().after($('.rtec-login-wrap').closest('.tribe-events-event-meta.rtec-event-meta'));
+                        $context.find('.rtec-success-message').first().after($('.rtec-login-wrap').closest('.rtec-event-meta'));
                     });
                 }
             }
 
             $('.rtec').each(function(index) {
+                var $rtec = $(this);
+
+                rtecCheckHoneypot($rtec);
 
                 if ($(this).closest('.rtec-outer-wrap').length && $(this).closest('.rtec-outer-wrap').find('.rtec-already-registered-options').length) {
                     var $outerWrap = $(this).closest('.rtec-outer-wrap'),
@@ -55,54 +77,50 @@ jQuery(document).ready(function($) {
                     $form.find('input[type=submit]').each(function() {
                         sendUnregisterText = $(this).val();
                     });
-                    $form.submit(function(event) {
-                        var val = $(this).find("input[type=submit][clicked=true]").val();
-                        if (sendUnregisterText === val) {
-                            event.preventDefault();
+                    $form.on('submit',function(event) {
+                        event.preventDefault();
 
-                            var action = 'rtec_send_unregister_link';
+                        var action = 'rtec_send_unregister_link';
 
-                            $form.after($('.rtec-spinner').clone());
-                            $form.next('.rtec-spinner').show();
-                            $form.fadeTo(500,.1);
-                            $form.find('input[type=submit]').attr('disabled',true).css('opacity', .1);
+                        $form.after($('.rtec-spinner').clone());
+                        $form.next('.rtec-spinner').show();
+                        $form.fadeTo(500,.1);
+                        $form.find('input[type=submit]').prop('disabled',true).css('opacity', .1);
 
-                            var submittedData = {
-                                'action': action,
-                                'event_id': $outerWrap.find('.rtec').attr('data-event'),
-                                'email': $form.find('input[name=rtec-visitor_email]').val()
-                            };
+                        var submittedData = {
+                            'action': action,
+                            'event_id': $outerWrap.find('.rtec').attr('data-event'),
+                            'email': $form.find('input[name=rtec-visitor_email]').val()
+                        };
 
-                            $.ajax({
-                                url: rtec.ajaxUrl,
-                                type: 'post',
-                                data: submittedData,
-                                success: function (data) {
-                                    $form.next('.rtec-spinner').remove();
-                                    $form.fadeTo(500,1);
-                                    $form.find('input[type=submit]').removeAttr('disabled').css('opacity', 1);
-                                    if (data.trim().indexOf('{') > -1) {
-                                        var response = JSON.parse(data.trim());
+                        $.ajax({
+                            url: rtec.ajaxUrl,
+                            type: 'post',
+                            data: submittedData,
+                            success: function (data) {
+                                $form.next('.rtec-spinner').remove();
+                                $form.fadeTo(500,1);
+                                $form.find('input[type=submit]').prop('disabled',false).css('opacity', 1);
+                                if (data.trim().indexOf('{') > -1) {
+                                    var response = JSON.parse(data.trim());
 
-                                        if (typeof response.success !== 'undefined') {
-                                            $form.replaceWith(response.success);
-                                        } else if (typeof response.error !== 'undefined') {
-                                            var $formField = $form.find('input[name=rtec-visitor_email]').closest('.rtec-input-wrapper');
-                                            if (!$formField.find('.rtec-error-message').length) {
-                                                $formField.append('<p class="rtec-error-message" role="alert">'+response.error+'</p>');
-                                            }
-                                            $form.find('input[name=rtec-visitor_email]').attr('aria-invalid','true');
+                                    if (typeof response.success !== 'undefined') {
+                                        $form.replaceWith(response.success);
+                                    } else if (typeof response.error !== 'undefined') {
+                                        var $formField = $form.find('input[name=rtec-visitor_email]').closest('.rtec-input-wrapper');
+                                        if (!$formField.find('.rtec-error-message').length) {
+                                            $formField.append('<p class="rtec-error-message" role="alert">'+response.error+'</p>');
                                         }
+                                        $form.find('input[name=rtec-visitor_email]').attr('aria-invalid','true');
                                     }
-
                                 }
-                            }); // ajax
 
-                        }
+                            }
+                        }); // ajax
                     });
-                    $form.find('input[type=submit]').click(function() {
-                        $("input[type=submit]", $(this).parents("form")).removeAttr("clicked");
-                        $(this).attr("clicked", "true");
+                    $form.find('input[type=submit]').on('click',function() {
+                        $("input[type=submit]", $(this).parents("form")).prop("clicked",false);
+                        $(this).prop("clicked", "true");
                     });
 
                 }
@@ -128,6 +146,26 @@ jQuery(document).ready(function($) {
                 }
 
             });
+
+            function rtecCheckHoneypot($rtecEl) {
+                if ($rtecEl.find('input[name=rtec_user_comments]').length &&
+                    $rtecEl.find('input[name=rtec_user_comments]').val() !== '') {
+                    if (!$rtecEl.find('.rtec-honeypot-clear-wrap').length) {
+                        var errorText = 'I am not a robot';
+                        if (typeof rtec.translations !== 'undefined') {
+                            errorText = rtec.translations.honeypotClear;
+                        }
+                        $rtecEl.find('#rtec-form .rtec-form-field').last().after('<div class="rtec-honeypot-clear-wrap">' +
+                            '<button class="rtec-honeypot-clear rtec-error">'+errorText+'</button>' +
+                            '</div>');
+                        $rtecEl.find('.rtec-honeypot-clear').on('click',function() {
+                            $(this).closest('.rtec-error').remove();
+                            $rtecEl.find('input[name=rtec_user_comments]').val('');
+                        });
+                    }
+
+                }
+            }
 
             var RtecForm = {
 
@@ -287,7 +325,7 @@ jQuery(document).ready(function($) {
 
                 enableSubmitButton: function (_callback, $context) {
                     if (_callback()) {
-                        $context.find('input[name=rtec_submit]').removeAttr('disabled').css('opacity', 1);
+                        $context.find('input[name=rtec_submit]').prop('disabled',false).css('opacity', 1);
                     }
                 },
 
@@ -335,7 +373,7 @@ jQuery(document).ready(function($) {
                                 $emailEl.addClass(RtecForm.validClass);
                                 RtecForm.removeErrorMessage($emailEl);
                             }
-                            $context.find('input[name=rtec_submit]').removeAttr('disabled').css('opacity', 1);
+                            $context.find('input[name=rtec_submit]').prop('disabled',false).css('opacity', 1);
                             $context.find('.rtec-email-spinner').remove();
 
                         }
@@ -352,13 +390,13 @@ jQuery(document).ready(function($) {
                 $rtecEmailField.on('input', function () {
                     var $this = $(this),
                         $context = $this.closest('.rtec');
-                    $context.find('input[name=rtec_submit]').attr('disabled', true).css('opacity', '.5');
+                    $context.find('input[name=rtec_submit]').prop('disabled', true).css('opacity', '.5');
                     clearTimeout(typingTimer);
                     typingTimer = setTimeout(function () {
                         var $eventID = $context.find('input[name=rtec_event_id]').val();
-                        RtecForm.enableSubmitButton(function () {
+                        if (RtecForm.isValidEmail($this.val())) {
                             RtecForm.isDuplicateEmail($this.val(), $eventID, $context);
-                        }, $context);
+                        }
                     }, doneTypingInterval);
                 });
                 $rtecEmailField.each(function () {
@@ -371,11 +409,13 @@ jQuery(document).ready(function($) {
                 });
             }
 
-            $('.rtec-form').submit(function (event) {
+            $('.rtec-form').on('submit',function (event) {
                 event.preventDefault();
 
-                $rtecEl = $(this).closest('.rtec');
-                $rtecEl.find('input[name=rtec_submit]').attr('disabled', true);
+                var $form = $(this),
+                    $rtecEl = $(this).closest('.rtec');
+                rtecCheckHoneypot($rtecEl);
+                $rtecEl.find('input[name=rtec_submit]').prop('disabled', true);
 
                 if ($rtecEl.find('.rtec-screen-reader-error').length) {
                     $rtecEl.find('.rtec-screen-reader-error').remove();
@@ -431,26 +471,26 @@ jQuery(document).ready(function($) {
                         type: 'post',
                         data: submittedData,
                         success: function (data) {
-/*
-                            $rtecEl.find('.rtec-spinner, #rtec-form-toggle-button').hide();
-                            $rtecEl.find('.rtec-form-wrapper').slideUp();
-                            $('html, body').animate({
-                                scrollTop: $rtecEl.offset().top - 200
-                            }, 750);
+                            /*
+                                                        $rtecEl.find('.rtec-spinner, #rtec-form-toggle-button').hide();
+                                                        $rtecEl.find('.rtec-form-wrapper').slideUp();
+                                                        $('html, body').animate({
+                                                            scrollTop: $rtecEl.offset().top - 200
+                                                        }, 750);
 
-                            if (data === 'full') {
-                                $rtecEl.prepend('<p class="rtec-success-message tribe-events-notices" aria-live="polite">Sorry! Registrations just filled up for this event. You are not registered</p>');
-                            } else if (data === 'email') {
-                                $rtecEl.prepend('<p class="rtec-success-message tribe-events-notices" aria-live="polite">There was a problem sending the email confirmation. Please contact the site administrator to confirm your registration</p>');
-                            } else if (data === 'form') {
-                                $rtecEl.prepend('<p class="rtec-success-message tribe-events-notices" aria-live="polite">There was a problem with one or more of the entries you submitted. Please try again</p>');
-                            } else {
-                                $rtecEl.prepend('<p class="rtec-success-message tribe-events-notices" aria-live="polite">' + $('#rtec').attr('data-rtec-success-message') + '</p>');
-                            }
-                            if (typeof rtecAfterSubmit === 'function') {
-                                rtecAfterSubmit();
-                            }
-                            */
+                                                        if (data === 'full') {
+                                                            $rtecEl.prepend('<p class="rtec-success-message tribe-events-notices" aria-live="polite">Sorry! Registrations just filled up for this event. You are not registered</p>');
+                                                        } else if (data === 'email') {
+                                                            $rtecEl.prepend('<p class="rtec-success-message tribe-events-notices" aria-live="polite">There was a problem sending the email confirmation. Please contact the site administrator to confirm your registration</p>');
+                                                        } else if (data === 'form') {
+                                                            $rtecEl.prepend('<p class="rtec-success-message tribe-events-notices" aria-live="polite">There was a problem with one or more of the entries you submitted. Please try again</p>');
+                                                        } else {
+                                                            $rtecEl.prepend('<p class="rtec-success-message tribe-events-notices" aria-live="polite">' + $('#rtec').attr('data-rtec-success-message') + '</p>');
+                                                        }
+                                                        if (typeof rtecAfterSubmit === 'function') {
+                                                            rtecAfterSubmit();
+                                                        }
+                                                        */
 
                             $rtecEl.find('.rtec-spinner, #rtec-form-toggle-button').remove();
                             $rtecEl.find('.rtec-form-wrapper').slideUp(400,function() {
@@ -477,7 +517,7 @@ jQuery(document).ready(function($) {
                         }
                     }); // ajax
                 } else { // if not .rtec-error
-                    $rtecEl.find('input[name=rtec_submit]').removeAttr('disabled').css('opacity', 1);
+                    $rtecEl.find('input[name=rtec_submit]').prop('disabled',false).css('opacity', 1);
                     RtecForm.addScreenReaderError();
 
                     if ($('.rtec-error-message').length) {
@@ -496,7 +536,7 @@ jQuery(document).ready(function($) {
             $rtecReveal.show();
             $rtecOptions.hide();
             $rtecOptionsRemove.remove();
-            $rtecReveal.click(function () {
+            $rtecReveal.on('click',function () {
                 if ($rtecOptions.is(':visible')) {
                     $rtecOptions.slideUp();
                 } else {
@@ -507,7 +547,7 @@ jQuery(document).ready(function($) {
             function rtecToggleModal() {
                 $('body').toggleClass('rtec-modal-is-open');
 
-                $('.rtec-modal-backdrop, .rtec-media-modal-close').click(function () {
+                $('.rtec-modal-backdrop, .rtec-media-modal-close').on('click',function () {
                     var $modalRtec = $('.rtec-modal-content').find('.rtec');
                     $modalRtec.find('.rtec-form-wrapper').hide();
                     $('.rtec-modal-placeholder').replaceWith($modalRtec);

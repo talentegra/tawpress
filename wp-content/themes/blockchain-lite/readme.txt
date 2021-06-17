@@ -4,16 +4,16 @@ Theme URI: https://www.cssigniter.com/themes/blockchain-lite/
 Author URI: https://www.cssigniter.com/
 Author: The CSSIgniter Team
 Contributors: cssigniterteam
-Stable tag: 1.3
+Stable tag: 1.3.1
 Requires PHP: 5.6
 Requires at least: 5.2
-Tested up to: 5.4.1
+Tested up to: 5.7.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Blockchain Lite is a stunning business theme for WordPress. Specially crafted for cryptocurrency-related websites, Blockchain Lite guarantees the smoothest reading experience.
+Blockchain lite is a modern and clean business theme for WordPress, ideal for businesses in the financial sector, consultancies, investing firms, businesses dealing with cryptocurrencies, blockchain companies and more. It supports WooCommerce for online store creation and is regularly updated to ensure continuing compatibility. Its responsive design will give your visitors the perfect mobile browsing experience on phones, tablets & retina enabled displays. It is fast and lightweight, coded with best SEO practises in mind, supports RTL languages and is translation ready. It offers a flexible top bar and header, multiple column layouts for the blog with a masonry effect, unlimited custom color schemes, custom typography, a flexible footer, custom logos and more. It supports the WordPress block editor and is also compatible with the most popular page builders like Elementor, Divi, Brizy and Beaver Builder.
 
 Theme page: https://www.cssigniter.com/themes/blockchain-lite/
 Demo: https://www.cssigniter.com/preview/blockchain-lite/

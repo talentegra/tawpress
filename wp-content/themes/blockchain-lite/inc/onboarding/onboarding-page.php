@@ -509,7 +509,7 @@ class Blockchain_Lite_Onboarding_Page {
 			<div class="blockchain-lite-onboarding-box blockchain-lite-onboarding-box-success">
 				<h4 class="box-title"><?php esc_html_e( 'Good to go!', 'blockchain-lite' ); ?></h4>
 				<p><?php esc_html_e( 'Now you can import the sample content and have your theme set up like the demo using the One Click Demo Import Plugin.', 'blockchain-lite' ); ?></p>
-				<p><a class="button button-primary" href="<?php echo esc_url( get_admin_url( '', 'themes.php?page=pt-one-click-demo-import' ) ); ?>"><?php esc_html_e( 'Get Started', 'blockchain-lite' ); ?></a></p>
+				<p><a class="button button-primary" href="<?php echo esc_url( get_admin_url( '', 'themes.php?page=one-click-demo-import' ) ); ?>"><?php esc_html_e( 'Get Started', 'blockchain-lite' ); ?></a></p>
 			</div>
 			<?php
 		}

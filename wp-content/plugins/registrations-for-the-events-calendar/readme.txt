@@ -1,11 +1,11 @@
-=== Registrations for The Events Calendar - Event Registration Plugin ===
+=== Registrations for the Events Calendar - Event Registration Plugin ===
 
 Contributors: roundupwp
 Support Website: https://roundupwp.com/support
 Tags: registration, The Events Calendar, RSVP, events, event registration, meetups, meetings, seminars, groups, conferences, registrations, add-on, extension, community, event contact, events calendar, workshops
 Requires at least: 3.5
-Tested up to: 5.6
-Stable tag: 2.6.2
+Tested up to: 5.7
+Stable tag: 2.7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -190,6 +190,25 @@ Yes. There is a custom database table added to each sub-site's database to separ
 Go to the "Support" tab on the plugin's settings page and follow the link to our support page, setup instructions page, or feature request page.
 
 == Changelog ==
+= 2.7.2 =
+* IMPORTANT: Significant changes to the HTML and CSS of the attendee list, log-in form, and unregister link tool were made due to changes in The Events Calendar 5.5.
+* Fix: Fixed missing attendance count message in the event list view after updating to The Events Calendar 5.5.
+* Fix: Updated jQuery methods for compatibility with WordPress 5.8.
+
+= 2.7.1 =
+* Fix: The code that checks for duplicate emails when someone registers was firing before a valid email was entered and causing a confusing error message.
+* Fix: When using the overview of the Registrations tab, suggested events that would display if no upcoming events were found would not use the PHP filter for the associated WP Query.
+* Fix: Added support for including events that are hidden from event listings in all places where events are displayed.
+
+= 2.7 =
+* New: Added "Registrations" menu item in addition to the submenu under "Events".
+* New: Added PHP hook "rtec_email_approved_for_registration" to allow customizations in what email addresses can register for an event.
+* New: If The Events Calendar is either not installed or not active, visiting the Registrations menu page will prompt users to install or activate The Events Calendar.
+* Tweak: If a browser auto fill adds input to the spam honeypot field, the person filling out the form will see a button to confirm that they are not a spam bot.
+* Tweak: Hovering over the green user icon on the registrations tab will explain that the registration was from a logged-in user.
+* Fix: Label and HTML class of the spam honeypot elements in the form were changed from "Address" to "Comments" to help prevent browsers from auto filling it.
+* Fix: Automatic placement of form with the block editor was not always working correctly.
+
 = 2.6.2 =
 * Tweak: Added support for several new email placeholders including start date {start-date}, start time {start-time}, end date {end-date}, end time {end-time}, cost {event-cost}, and a link to the event page {event-url}.
 * Tweak: Changed how the code collects events while on the "Registrations" tab to allow for more customization using the PHP hook "rtec_registration_overview_query_args".

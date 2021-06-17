@@ -151,8 +151,6 @@ class Cookie_Notice_Welcome {
 
 		if ( $is_ajax && ! check_ajax_referer( 'cookie-notice-welcome', 'nonce' ) )
 			wp_die( _( 'You do not have permission to access this page.', 'cookie-notice' ) );
-		
-		$logo_url = plugins_url( '../img/cookie-compliance-logo.png', __FILE__ );
 
 		// get token data
 		$token_data = get_transient( 'cookie_notice_app_token' );
@@ -175,10 +173,10 @@ class Cookie_Notice_Welcome {
 								<p>' . __( 'An all new web application to help you deliver better consent experiences and comply with GDPR and CCPA more effectively.', 'cookie-notice' ) . '</p>
 							</div>
 							<div class="cn-hero-image">
-								<img src="//cno1-53eb.kxcdn.com/screen-dashboard.png">
+								<img src="//cno0-53eb.kxcdn.com/screen-dashboard.png" alt="Cookie Compliance dashboard" />
 							</div>
 							<div class="cn-lead">
-								<p>' . __( 'Digital Factory - the original developers of Cookie Notice - has joined forces with <a href="https://hu-manity.co" target="_blank" class="cn-link">Hu-manity.co</a>, the company known for introducing the 31st Human Right, to launch the Cookie Compliance&trade; web application.', 'cookie-notice' ) . '</p>
+								<p>' . sprintf( __( 'Digital Factory - the original developers of Cookie Notice - has joined forces with %s, the company known for introducing the 31st Human Right, to launch the Cookie Compliance&trade; web application.', 'cookie-notice' ), '<a href="https://hu-manity.co" target="_blank" class="cn-link">Hu-manity.co</a>' ) . '</p>
 							</div>
 						</div>
 					</div>
@@ -213,7 +211,7 @@ class Cookie_Notice_Welcome {
 										<img src="' . plugins_url( '../img/cookie-notice-logo-dark.png', __FILE__ ) . '">
 										<span class="cn-badge">' . __( 'WP Plugin', 'cookie-notice' ) . '</span>
 									</div>
-									<img src="//cno3-53eb.kxcdn.com/screen-notice.png">
+									<img src="//cno0-53eb.kxcdn.com/screen-notice.png" alt="Cookie Notice dashboard" />
 									<ul>
 										<li><span>' . __( 'Customizable notice message', 'cookie-notice' ) . '</span></li>
 										<li><span>' . __( 'Consent on click, scroll or close', 'cookie-notice' ) . '</span></li>
@@ -222,14 +220,14 @@ class Cookie_Notice_Welcome {
 									</ul>
 								</div>
 								<div class="cn-flex-item">
-									<img src="//cno3-53eb.kxcdn.com/screen-plus.png">
+									<img src="//cno0-53eb.kxcdn.com/screen-plus.png" alt="Cookie Notice + Compliance" />
 								</div>
 								<div class="cn-flex-item">
 									<div class="cn-logo-container">
 										<img src="' . plugins_url( '../img/cookie-compliance-logo-dark.png', __FILE__ ) . '">
 										<span class="cn-badge">' . __( 'Web App', 'cookie-notice' ) . '</span>
 									</div>
-									<img src="//cno3-53eb.kxcdn.com/screen-compliance.png">
+									<img src="//cno0-53eb.kxcdn.com/screen-compliance.png"alt="Cookie Compliance dashboard" />
 									<ul>
 										<li><span>' . __( 'Customizable <b>GDPR & CCPA</b> notice templates', 'cookie-notice' ) . '</span></li>
 										<li><span>' . __( '<b>Consent Analytics</b> Dashboard', 'cookie-notice' ) . '</span></li>
@@ -281,7 +279,7 @@ class Cookie_Notice_Welcome {
 					<div class="cn-inner">
 						<div class="cn-header">
 							<div class="cn-top-bar">
-								<div class="cn-logo"><img src="' . $logo_url . '"></div>
+								<div class="cn-logo"><img src="//cno1-53eb.kxcdn.com/cookie-compliance-logo.png" alt="Cookie Compliance logo" /></div>
 							</div>	
 						</div>
 						<div class="cn-body">
@@ -303,7 +301,7 @@ class Cookie_Notice_Welcome {
 					<div class="cn-inner">
 						<div class="cn-header">
 							<div class="cn-top-bar">
-								<div class="cn-logo"><img src="' . $logo_url . '"></div>
+								<div class="cn-logo"><img src="//cno2-53eb.kxcdn.com/cookie-compliance-logo.png" alt="Cookie Compliance logo" /></div>
 							</div>	
 						</div>
 						<div class="cn-body">
@@ -392,13 +390,13 @@ class Cookie_Notice_Welcome {
 					<div class="cn-inner">
 						<div class="cn-header">
 							<div class="cn-top-bar">
-								<div class="cn-logo"><img src="' . $logo_url . '"></div>
+								<div class="cn-logo"><img src="//cno3-53eb.kxcdn.com/cookie-compliance-logo.png" alt="Cookie Compliance logo" /></div>
 							</div>	
 						</div>
 						<div class="cn-body">
 							<h2>' . __( 'GDPR & CCPA Upgrade Ready', 'cookie-notice' ) . '</h2>
 							<div class="cn-lead">
-								<p>' . __( 'To start using The Next Generation of Cookie Notice create a Cooking Compliance&trade; account. Then you will be asked to select plan and authorize your subscription.', 'cookie-notice' ) . '</p>
+								<p>' . __( 'To start using The Next Generation of Cookie Notice create a Cookie Compliance&trade; account. Then you will be asked to select plan and authorize your subscription.', 'cookie-notice' ) . '</p>
 							</div>
 							<div class="cn-accordion">
 								<div id="cn-accordion-account" class="cn-accordion-item cn-form-container">
@@ -492,13 +490,13 @@ class Cookie_Notice_Welcome {
 					<div class="cn-inner">
 						<div class="cn-header">
 							<div class="cn-top-bar">
-								<div class="cn-logo"><img src="' . $logo_url . '"></div>
+								<div class="cn-logo"><img src="//cno3-53eb.kxcdn.com/cookie-compliance-logo.png" alt="Cookie Compliance logo" /></div>
 							</div>	
 						</div>
 						<div class="cn-body">
 							<h2>' . __( 'Compliance Sign in', 'cookie-notice' ) . '</h2>
 							<div class="cn-lead">
-								<p>' . __( 'Sign in to your existing Cooking Compliance&trade; account to continue upgrading of this website.', 'cookie-notice' ) . '</p>
+								<p>' . __( 'Sign in to your existing Cookie Compliance&trade; account to continue upgrading of this website.', 'cookie-notice' ) . '</p>
 							</div>
 							<div class="cn-accordion">
 								<div id="cn-accordion-account" class="cn-accordion-item cn-form-container">
@@ -584,7 +582,7 @@ class Cookie_Notice_Welcome {
 					<div class="cn-inner">
 						<div class="cn-header">
 							<div class="cn-top-bar">
-								<div class="cn-logo"><img src="' . $logo_url . '"></div>
+								<div class="cn-logo"><img src="//cno0-53eb.kxcdn.com/cookie-compliance-logo.png" alt="Cookie Compliance logo" /></div>
 							</div>	
 						</div>
 						<div class="cn-body">

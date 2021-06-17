@@ -368,8 +368,13 @@ function blockchain_lite_asset_version( $version = false ) {
 	static $theme_version = false;
 
 	if ( ! $theme_version ) {
-		$theme         = wp_get_theme();
-		$theme_version = $theme->get( 'Version' );
+		$theme = wp_get_theme();
+
+		if ( is_child_theme() ) {
+			$theme_version = $theme->parent()->get( 'Version' ) . '-' . $theme->get( 'Version' );
+		} else {
+			$theme_version = $theme->get( 'Version' );
+		}
 	}
 
 	if ( $version ) {

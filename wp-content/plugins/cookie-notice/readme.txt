@@ -3,8 +3,8 @@ Contributors: humanityco
 Tags: gdpr, ccpa, cookies, consent, compliance
 Requires at least: 4.3
 Requires PHP: 5.3
-Tested up to: 5.6.1
-Stable tag: 2.0.1
+Tested up to: 5.7.1
+Stable tag: 2.0.4
 License: MIT License
 License URI: http://opensource.org/licenses/MIT
 
@@ -57,6 +57,18 @@ No questions yet.
 1. screenshot-1.png
 
 == Changelog ==
+
+= 2.0.4 =
+* Fix: Undefined constant HOURS_IN_SECONDS
+* Fix: Button style none adding CSS classes "cn-set-cookie cn-button"
+* Tweak: Switched the behavior of close icon from accept to reject
+* Tweak: Minified frontend and admin js files
+
+= 2.0.3 =
+* Fix: Cookies accepted function issue when Compliance activated
+
+= 2.0.2 =
+* Tweak: UI/UX improvements
 
 = 2.0.1 =
 * Fix: Pending Compliance update blocking the notice
@@ -303,7 +315,8 @@ Initial release
 
 == Upgrade Notice ==
 
-= 2.0.1 =
-* Fix: Pending Compliance update blocking the notice
-* Fix: PHP Warning: Cannot modify header information
-* Tweak: UI/UX fixes for the settings screen
+= 2.0.4 =
+* Fix: Undefined constant HOURS_IN_SECONDS
+* Fix: Button style none adding CSS classes "cn-set-cookie cn-button"
+* Tweak: Switched the behavior of close icon from accept to reject
+* Tweak: Minified frontend and admin js files

@@ -3,7 +3,7 @@ Contributors: TheMagnifico52
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 7.2.14
-Stable tag: 0.1.3
+Stable tag: 0.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-logo, one-column, two-columns, wide-blocks, block-styles, sticky-post, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, threaded-comments, left-sidebar, right-sidebar, blog, e-commerce, portfolio
@@ -12,7 +12,7 @@ Digital Books is a perfect theme for book store, education, author, selling eboo
 
 == Description ==
 
-Digital Books is a perfect theme for book store, education, author, selling ebooks, PDFs online, journalists, editors, publishers, course providers, online book stores, literature, copywriter, journal, publisher, story, caters education, teachers, institutes, training academy, coaching centre, LMS, guidance, counselling centre, e-learning, kindergartens, playschools, book landing, book-storage, book series, copywriter and primary school websites. The theme has an eye-catching, sophisticated and modern design that your visitors will surely like.It has many options for customization and personalization to get you exactly the website you like. It is SEO-friendly theme that will help your website rank soon on major search engines like Google. It is implemented on bootstrap framework. You have the option to include shortcodes that will improve the functionality of your website. Also, it is a translation-ready theme that supports many local and international languages with RTL layout. The theme has faster page load time and optimized codes. The design is responsive so it can be viewed on any device. You can link all your social media pages to give credibility to your work.
+Digital Books is a perfect theme for book store, education, author, selling ebooks, PDFs online, journalists, editors, publishers, course providers, online book stores, literature, library, comic book store, copywriter, journal, publisher, story, caters education, teachers, institutes, bookstore, book keeper, comic-con, comic subscription, marvel avengers, training academy, coaching centre, LMS, guidance, counselling centre, e-learning, kindergartens, playschools, book landing, book-storage, book series, copywriter and primary school websites. The theme has an eye-catching, sophisticated and modern design that your visitors will surely like.It has many options for customization and personalization to get you exactly the website you like. It is SEO-friendly theme that will help your website rank soon on major search engines like Google. It is implemented on bootstrap framework. You have the option to include shortcodes that will improve the functionality of your website. Also, it is a translation-ready theme that supports many local and international languages with RTL layout. The theme has faster page load time and optimized codes. The design is responsive so it can be viewed on any device. You can link all your social media pages to give credibility to your work.
 
 == Installation ==
 
@@ -115,3 +115,12 @@ Pxhere Images,
 * Added sticky post, wide align and block editor style tag.
 * Update RTL file.
 * Done changes in CSS file.
+
+= 0.1.4
+
+* Bugs Fixes
+
+= 0.1.5
+
+* Added theme color option.
+* Added scroll back.

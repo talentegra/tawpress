@@ -44,7 +44,7 @@ function blockchain_lite_wp_get_attachment_link_lightbox_caption( $html, $id, $s
 				if ( $caption ) {
 					$new_a = $matches[1];
 					$new_a = rtrim( $new_a, '>' );
-					$new_a = $new_a . ' title="' . $caption . '">';
+					$new_a = $new_a . ' title="' . esc_attr( $caption ) . '">';
 
 					$html = str_replace( $matches[1], $new_a, $html );
 				}

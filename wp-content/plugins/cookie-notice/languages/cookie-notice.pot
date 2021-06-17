@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cookie Notice\n"
-"POT-Creation-Date: 2021-02-04 14:45+0100\n"
+"POT-Creation-Date: 2021-02-05 18:15+0100\n"
 "PO-Revision-Date: 2015-03-24 11:30+0100\n"
 "Last-Translator: Bartosz Arendt <info@dfactory.eu>\n"
 "Language-Team: dFactory <info@dfactory.eu>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../cookie-notice.php:466
+#: ../cookie-notice.php:464
 msgid "Settings"
 msgstr ""
 
-#: ../includes/settings.php:48 ../includes/welcome.php:360
+#: ../includes/settings.php:48 ../includes/welcome.php:358
 msgid "Top"
 msgstr ""
 
-#: ../includes/settings.php:49 ../includes/welcome.php:359
+#: ../includes/settings.php:49 ../includes/welcome.php:357
 msgid "Bottom"
 msgstr ""
 
@@ -184,12 +184,12 @@ msgstr ""
 msgid "Promote the privacy of your website visitors without affecting how you do your business."
 msgstr ""
 
-#: ../includes/settings.php:432 ../includes/welcome.php:173
-#: ../includes/welcome.php:206
+#: ../includes/settings.php:432 ../includes/welcome.php:171
+#: ../includes/welcome.php:204
 msgid "The next generation of Cookie Notice"
 msgstr ""
 
-#: ../includes/settings.php:434 ../includes/welcome.php:175
+#: ../includes/settings.php:434 ../includes/welcome.php:173
 msgid "An all new web application to help you deliver better consent experiences and comply with GDPR and CCPA more effectively."
 msgstr ""
 
@@ -354,11 +354,11 @@ msgid "Launch Cookie Compliance&trade; and add GDPR & CCPA compliance features."
 msgstr ""
 
 #: ../includes/settings.php:584
-msgid "Enter your Cooking Compliance&trade; application ID."
+msgid "Enter your Cookie Compliance&trade; application ID."
 msgstr ""
 
 #: ../includes/settings.php:596
-msgid "Enter your Cooking Compliance&trade; application secret key."
+msgid "Enter your Cookie Compliance&trade; application secret key."
 msgstr ""
 
 #: ../includes/settings.php:606
@@ -576,345 +576,346 @@ msgstr ""
 msgid "Please fill all the required fields."
 msgstr ""
 
-#: ../includes/welcome.php:181
-msgid "Digital Factory - the original developers of Cookie Notice - has joined forces with <a href=\"https://hu-manity.co\" target=\"_blank\" class=\"cn-link\">Hu-manity.co</a>, the company known for introducing the 31st Human Right, to launch the Cookie Compliance&trade; web application."
+#: ../includes/welcome.php:179
+#, php-format
+msgid "Digital Factory - the original developers of Cookie Notice - has joined forces with %s, the company known for introducing the 31st Human Right, to launch the Cookie Compliance&trade; web application."
 msgstr ""
 
-#: ../includes/welcome.php:205
+#: ../includes/welcome.php:203
 msgid "Privacy Made Easy"
 msgstr ""
 
-#: ../includes/welcome.php:208
+#: ../includes/welcome.php:206
 msgid "Cookie Compliance&trade; adds GDPR & CCPA compliance features, and a new Privacy Experience to Cookie Notice."
 msgstr ""
 
-#: ../includes/welcome.php:214
+#: ../includes/welcome.php:212
 msgid "WP Plugin"
 msgstr ""
 
-#: ../includes/welcome.php:218
+#: ../includes/welcome.php:216
 msgid "Customizable notice message"
 msgstr ""
 
-#: ../includes/welcome.php:219
+#: ../includes/welcome.php:217
 msgid "Consent on click, scroll or close"
 msgstr ""
 
-#: ../includes/welcome.php:220
+#: ../includes/welcome.php:218
 msgid "Multiple cookie expiry options"
 msgstr ""
 
-#: ../includes/welcome.php:221
+#: ../includes/welcome.php:219
 msgid "Link to Privacy Policy page"
 msgstr ""
 
-#: ../includes/welcome.php:230
+#: ../includes/welcome.php:228
 msgid "Web App"
 msgstr ""
 
-#: ../includes/welcome.php:234
+#: ../includes/welcome.php:232
 msgid "Customizable <b>GDPR & CCPA</b> notice templates"
 msgstr ""
 
-#: ../includes/welcome.php:235
+#: ../includes/welcome.php:233
 msgid "<b>Consent Analytics</b> Dashboard"
 msgstr ""
 
-#: ../includes/welcome.php:236
+#: ../includes/welcome.php:234
 msgid "Cookie <b>Autoblocking</b> (complies with GDPR Art.7)"
 msgstr ""
 
-#: ../includes/welcome.php:237
+#: ../includes/welcome.php:235
 msgid "<b>Cookie Categories</b> (complies with GDPR Art.32)"
 msgstr ""
 
-#: ../includes/welcome.php:238
+#: ../includes/welcome.php:236
 msgid "<b>Proof-of-Consent</b> Storage (complies with GDPR Art.30)"
 msgstr ""
 
-#: ../includes/welcome.php:239
+#: ../includes/welcome.php:237
 msgid "Link to <b>'Do Not Sell'</b> page (supports CCPA Sec.1798)"
 msgstr ""
 
-#: ../includes/welcome.php:240
+#: ../includes/welcome.php:238
 msgid "Enhanced design controls and options"
 msgstr ""
 
-#: ../includes/welcome.php:241
+#: ../includes/welcome.php:239
 msgid "Multiple new banner positions"
 msgstr ""
 
-#: ../includes/welcome.php:242
+#: ../includes/welcome.php:240
 msgid "Custom language localization"
 msgstr ""
 
-#: ../includes/welcome.php:256
+#: ../includes/welcome.php:254
 msgid "Welcome"
 msgstr ""
 
-#: ../includes/welcome.php:257
+#: ../includes/welcome.php:255
 msgid "You are now Promoting Privacy"
 msgstr ""
 
-#: ../includes/welcome.php:259
+#: ../includes/welcome.php:257
 msgid "Log into the Cookie Compliance&trade; web application and continue configuring your Privacy Experience."
 msgstr ""
 
-#: ../includes/welcome.php:262
+#: ../includes/welcome.php:260
 msgid "Go to Application"
 msgstr ""
 
-#: ../includes/welcome.php:288 ../includes/welcome.php:399
+#: ../includes/welcome.php:286 ../includes/welcome.php:397
 msgid "GDPR & CCPA Upgrade Ready"
 msgstr ""
 
-#: ../includes/welcome.php:289
+#: ../includes/welcome.php:287
 msgid "Simulate Cookie Compliance&trade; on your site."
 msgstr ""
 
-#: ../includes/welcome.php:289
+#: ../includes/welcome.php:287
 msgid "Click below to see what the next generation of Cookie Notice looks like running on your website."
 msgstr ""
 
-#: ../includes/welcome.php:291
+#: ../includes/welcome.php:289
 msgid "Site URL"
 msgstr ""
 
-#: ../includes/welcome.php:292
+#: ../includes/welcome.php:290
 msgid "Site Name"
 msgstr ""
 
-#: ../includes/welcome.php:297
+#: ../includes/welcome.php:295
 msgid "Launch Live Demo"
 msgstr ""
 
-#: ../includes/welcome.php:310
+#: ../includes/welcome.php:308
 msgid "Compliance Live Demo"
 msgstr ""
 
-#: ../includes/welcome.php:311
+#: ../includes/welcome.php:309
 msgid "Simulate the upgraded Cookie Compliance&trade; design and compliance features through the options below. Click Add Copmliance to save the configuration and go to creating your Cookie Compliance&trade; account."
 msgstr ""
 
-#: ../includes/welcome.php:315
+#: ../includes/welcome.php:313
 msgid "Banner Compliance"
 msgstr ""
 
-#: ../includes/welcome.php:336
+#: ../includes/welcome.php:334
 msgid "Select the laws that apply to your business"
 msgstr ""
 
-#: ../includes/welcome.php:338
+#: ../includes/welcome.php:336
 msgid "GDPR"
 msgstr ""
 
-#: ../includes/welcome.php:339
+#: ../includes/welcome.php:337
 msgid "CCPA"
 msgstr ""
 
-#: ../includes/welcome.php:343
+#: ../includes/welcome.php:341
 msgid "What kind of services is your site using? Check all that apply"
 msgstr ""
 
-#: ../includes/welcome.php:345
+#: ../includes/welcome.php:343
 msgid "I use personalization services on my site​"
 msgstr ""
 
-#: ../includes/welcome.php:346
+#: ../includes/welcome.php:344
 msgid "I collect and analyse information about my website’s traffic"
 msgstr ""
 
-#: ../includes/welcome.php:347
+#: ../includes/welcome.php:345
 msgid "I run targeted ads on my site using, for example, Google Adsense​"
 msgstr ""
 
-#: ../includes/welcome.php:353
+#: ../includes/welcome.php:351
 msgid "Banner Design"
 msgstr ""
 
-#: ../includes/welcome.php:357
+#: ../includes/welcome.php:355
 msgid "Select your preferred display position"
 msgstr ""
 
-#: ../includes/welcome.php:361
+#: ../includes/welcome.php:359
 msgid "Left"
 msgstr ""
 
-#: ../includes/welcome.php:362
+#: ../includes/welcome.php:360
 msgid "Right"
 msgstr ""
 
-#: ../includes/welcome.php:363
+#: ../includes/welcome.php:361
 msgid "Center"
 msgstr ""
 
-#: ../includes/welcome.php:367
+#: ../includes/welcome.php:365
 msgid "Adjust the banner color scheme"
 msgstr ""
 
-#: ../includes/welcome.php:369
+#: ../includes/welcome.php:367
 msgid "Color of the buttons and interactive elements."
 msgstr ""
 
-#: ../includes/welcome.php:370
+#: ../includes/welcome.php:368
 msgid "Color of the banner background."
 msgstr ""
 
-#: ../includes/welcome.php:371
+#: ../includes/welcome.php:369
 msgid "Color of the borders and inactive elements."
 msgstr ""
 
-#: ../includes/welcome.php:372
+#: ../includes/welcome.php:370
 msgid "Color of the body text."
 msgstr ""
 
-#: ../includes/welcome.php:373
+#: ../includes/welcome.php:371
 msgid "Color of the heading text."
 msgstr ""
 
-#: ../includes/welcome.php:374
+#: ../includes/welcome.php:372
 msgid "Color of the button text."
 msgstr ""
 
-#: ../includes/welcome.php:381
+#: ../includes/welcome.php:379
 msgid "Add Compliance"
 msgstr ""
 
-#: ../includes/welcome.php:401
-msgid "To start using The Next Generation of Cookie Notice create a Cooking Compliance&trade; account. Then you will be asked to select plan and authorize your subscription."
+#: ../includes/welcome.php:399
+msgid "To start using The Next Generation of Cookie Notice create a Cookie Compliance&trade; account. Then you will be asked to select plan and authorize your subscription."
 msgstr ""
 
-#: ../includes/welcome.php:405
+#: ../includes/welcome.php:403
 msgid "Create Account"
 msgstr ""
 
-#: ../includes/welcome.php:410 ../includes/welcome.php:510
+#: ../includes/welcome.php:408 ../includes/welcome.php:508
 msgid "Email address"
 msgstr ""
 
-#: ../includes/welcome.php:413 ../includes/welcome.php:513
+#: ../includes/welcome.php:411 ../includes/welcome.php:511
 msgid "Password"
 msgstr ""
 
-#: ../includes/welcome.php:416
+#: ../includes/welcome.php:414
 msgid "Confirm Password"
 msgstr ""
 
-#: ../includes/welcome.php:420
+#: ../includes/welcome.php:418
 #, php-format
 msgid "I have read and agree to the <a href=\"%s\" target=\"_blank\">Terms of Service"
 msgstr ""
 
-#: ../includes/welcome.php:424
+#: ../includes/welcome.php:422
 msgid "Sign Up"
 msgstr ""
 
-#: ../includes/welcome.php:438
+#: ../includes/welcome.php:436
 msgid "Already have an account?"
 msgstr ""
 
-#: ../includes/welcome.php:438 ../includes/welcome.php:516
+#: ../includes/welcome.php:436 ../includes/welcome.php:514
 msgid "Sign in"
 msgstr ""
 
-#: ../includes/welcome.php:443
+#: ../includes/welcome.php:441
 msgid "Account Plan"
 msgstr ""
 
-#: ../includes/welcome.php:449 ../includes/welcome.php:541
+#: ../includes/welcome.php:447 ../includes/welcome.php:539
 msgid "<b>14 days</b> Free Trial"
 msgstr ""
 
-#: ../includes/welcome.php:449 ../includes/welcome.php:541
+#: ../includes/welcome.php:447 ../includes/welcome.php:539
 msgid "/mo"
 msgstr ""
 
-#: ../includes/welcome.php:450 ../includes/welcome.php:542
+#: ../includes/welcome.php:448 ../includes/welcome.php:540
 msgid "<b>30 days</b> Free Trial"
 msgstr ""
 
-#: ../includes/welcome.php:450 ../includes/welcome.php:542
+#: ../includes/welcome.php:448 ../includes/welcome.php:540
 msgid "/yr"
 msgstr ""
 
-#: ../includes/welcome.php:450
+#: ../includes/welcome.php:448
 #, php-format
 msgid "15% off"
 msgstr ""
 
-#: ../includes/welcome.php:454 ../includes/welcome.php:546
+#: ../includes/welcome.php:452 ../includes/welcome.php:544
 msgid "Subscription Method"
 msgstr ""
 
-#: ../includes/welcome.php:456 ../includes/welcome.php:548
+#: ../includes/welcome.php:454 ../includes/welcome.php:546
 msgid "Credit Card"
 msgstr ""
 
-#: ../includes/welcome.php:457 ../includes/welcome.php:549
+#: ../includes/welcome.php:455 ../includes/welcome.php:547
 msgid "PayPal"
 msgstr ""
 
-#: ../includes/welcome.php:463 ../includes/welcome.php:555
+#: ../includes/welcome.php:461 ../includes/welcome.php:553
 msgid "Card Number"
 msgstr ""
 
-#: ../includes/welcome.php:467 ../includes/welcome.php:559
+#: ../includes/welcome.php:465 ../includes/welcome.php:557
 msgid "Expiration Date"
 msgstr ""
 
-#: ../includes/welcome.php:471 ../includes/welcome.php:563
+#: ../includes/welcome.php:469 ../includes/welcome.php:561
 msgid "CVC/CVV"
 msgstr ""
 
-#: ../includes/welcome.php:475 ../includes/welcome.php:567
+#: ../includes/welcome.php:473 ../includes/welcome.php:565
 msgid "Start Free Trial"
 msgstr ""
 
-#: ../includes/welcome.php:499
+#: ../includes/welcome.php:497
 msgid "Compliance Sign in"
 msgstr ""
 
-#: ../includes/welcome.php:501
-msgid "Sign in to your existing Cooking Compliance&trade; account to continue upgrading of this website."
+#: ../includes/welcome.php:499
+msgid "Sign in to your existing Cookie Compliance&trade; account to continue upgrading of this website."
 msgstr ""
 
-#: ../includes/welcome.php:505
+#: ../includes/welcome.php:503
 msgid "Account Login"
 msgstr ""
 
-#: ../includes/welcome.php:530
+#: ../includes/welcome.php:528
 msgid "Don't have an account yet?"
 msgstr ""
 
-#: ../includes/welcome.php:530
+#: ../includes/welcome.php:528
 msgid "Sign up"
 msgstr ""
 
-#: ../includes/welcome.php:535
+#: ../includes/welcome.php:533
 msgid "Compliance Plan"
 msgstr ""
 
-#: ../includes/welcome.php:591
+#: ../includes/welcome.php:589
 msgid "Success!"
 msgstr ""
 
-#: ../includes/welcome.php:592
+#: ../includes/welcome.php:590
 msgid "You have successfully upgraded your website to Cookie Compliance&trade;"
 msgstr ""
 
-#: ../includes/welcome.php:592
+#: ../includes/welcome.php:590
 #, php-format
 msgid "Go to Cookie Compliance&trade; application now. Or access it anytime from your <a href=\"%s\">Cookie Notice settings page</a>."
 msgstr ""
 
-#: ../includes/welcome.php:601
+#: ../includes/welcome.php:599
 msgid "Remind me later"
 msgstr ""
 
-#: ../includes/welcome.php:604
+#: ../includes/welcome.php:602
 msgid "WordPress Dashboard"
 msgstr ""
 
-#: ../includes/welcome.php:607
+#: ../includes/welcome.php:605
 msgid "Skip for now"
 msgstr ""

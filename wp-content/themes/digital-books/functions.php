@@ -137,6 +137,8 @@ function digital_books_scripts() {
 
 	wp_enqueue_style( 'digital-books-style', get_stylesheet_uri() );
 
+	wp_style_add_data('digital-books-style', 'rtl', 'replace');
+
 	// fontawesome
 	wp_enqueue_style( 'fontawesome-css', esc_url(get_template_directory_uri()).'/assets/css/fontawesome/css/all.css' );
 
@@ -151,6 +153,30 @@ function digital_books_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'digital_books_scripts' );
+
+/**
+ * Enqueue theme color style.
+ */
+function digital_books_theme_color() {
+
+    $theme_color_css = '';
+    $digital_books_theme_color = get_theme_mod('digital_books_theme_color');
+
+	$theme_color_css = '
+		.sticky .entry-title::before,.main-navigation .sub-menu,#button,.sidebar input[type="submit"],.comment-respond input#submit,.post-navigation .nav-previous a:hover, .post-navigation .nav-next a:hover, .posts-navigation .nav-previous a:hover, .posts-navigation .nav-next a:hover,.woocommerce .woocommerce-ordering select,.woocommerce ul.products li.product .onsale, .woocommerce span.onsale,.pro-button a, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,.wp-block-button__link,.serv-box:hover,.woocommerce-account .woocommerce-MyAccount-navigation ul li,.btn-primary,.sidebar h5,.toggle-nav i,span.onsale,.slide-btn a,.serach_inner [type="submit"] {
+			background: '.esc_attr($digital_books_theme_color).';
+		}
+		a,.sidebar ul li a:hover,#colophon a:hover, #colophon a:focus,p.price, .woocommerce ul.products li.product .price, .woocommerce div.product p.price, .woocommerce div.product span.price,.woocommerce-message::before, .woocommerce-info::before,.slider-inner-box a h2 {
+			color: '.esc_attr($digital_books_theme_color).';
+		}
+		.woocommerce-message, .woocommerce-info,.wp-block-pullquote,.wp-block-quote, .wp-block-quote:not(.is-large):not(.is-style-large), .wp-block-pullquote,.btn-primary{
+			border-color: '.esc_attr($digital_books_theme_color).';
+		}
+	';
+    wp_add_inline_style( 'digital-books-style',$theme_color_css );	
+
+}
+add_action( 'wp_enqueue_scripts', 'digital_books_theme_color' );
 
 function digital_books_font_url(){
 	$font_url = '';

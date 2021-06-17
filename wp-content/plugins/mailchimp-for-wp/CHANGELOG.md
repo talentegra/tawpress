@@ -1,6 +1,35 @@
 Changelog
 =========
 
+#### 4.8.5 - Jun 1, 2021
+
+Add nonce verification to all URL's using _mc4wp_action query parameter.
+This fixes a CSRF vulnerability where a malicious website could trick a logged-in admin user in performing unwanted actions.
+
+Thanks to Erwin from [WPScan](https://wpscan.com/) for bringing this issue to our attention.
+
+
+#### 4.8.4 - May 7, 2021
+
+- Add `defer` attribute to JS file, so page parsing isn't blocked at all.
+- Rewrite plugin CSS to optimize for selector performance and get rid of some duplication.
+
+After installing this update, make sure to also update any add-on plugins like [Mailchimp for WordPress Premium](https://www.mc4wp.com/premium-features/) and [Mailchimp Top Bar](https://wordpress.org/plugins/mailchimp-top-bar/).
+
+
+#### 4.8.3 - Jan 21, 2021
+
+- Fix fatal error on older PHP versions when submitting form without any subscriber tags set in the form settings.
+- Minor performance improvement in bootstrap method of the plugin.
+
+
+#### 4.8.2 - Jan 20, 2021
+
+- Allow short-circuiting `mc4wp_subscriber_data` filter by returning `null` or `false`.
+- Use a subdirectory for the default debug log file location, so that it's easier to protect using htaccess.
+- Improved reliability for fetching lists from mailchimp when lists have high stats.member_count property.
+
+
 #### 4.8.1 - Aug 25, 2020
 
 - Fix notice by explicitly setting `permission_callback` on registered REST route.

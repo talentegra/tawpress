@@ -63,6 +63,22 @@ function digital_books_customize_register($wp_customize){
             'render_callback' => 'digital_books_customize_partial_blogname',
         ));
     }
+
+    // Theme Color
+    $wp_customize->add_section('digital_books_color_option',array(
+        'title' => esc_html__('Theme Color','digital-books'),
+        'description' => esc_html__('Change theme color on one click.','digital-books'),
+    ));
+
+    $wp_customize->add_setting( 'digital_books_theme_color', array(
+        'default' => '#fbb703',
+        'sanitize_callback' => 'sanitize_hex_color'
+    ));
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'digital_books_theme_color', array(
+        'label' => esc_html__('Color Option','digital-books'),
+        'section' => 'digital_books_color_option',
+        'settings' => 'digital_books_theme_color' 
+    )));
     
     // Social Link
     $wp_customize->add_section('digital_books_social_link',array(

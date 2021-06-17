@@ -56,6 +56,7 @@
 	            </div>
 	        </div>
 	    </div>
+	    <a id="button"><?php esc_html_e('TOP','digital-books'); ?></a>
     </div>
 </footer>
 </div>

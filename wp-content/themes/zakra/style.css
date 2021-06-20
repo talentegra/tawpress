@@ -903,6 +903,11 @@ a:active {
 .tg-primary-menu > div ul li.current_page_ancestor > a, .tg-primary-menu > div ul li.current-menu-ancestor > a, .tg-primary-menu > div ul li.current_page_item > a, .tg-primary-menu > div ul li.current-menu-item > a {
 	color: #269bd1;
 }
+.main-navigation.tg-primary-menu > div ul li.tg-header-button-wrap a {
+border-radius: 30px;
+background-color:#00519D !important;
+color:#fff !important;
+}
 
 .tg-primary-menu > div ul li:hover > a {
 	color: #269bd1;
@@ -1729,6 +1734,11 @@ select {
 .site-branding .site-title {
 	font-family: -apple-system, blinkmacsystemfont, "segoe ui", roboto, "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial, sans-serif;
 	margin: 0;
+}
+
+.site-branding img 
+{
+width:200px;
 }
 
 .wp-custom-header img {

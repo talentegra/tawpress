@@ -7,6 +7,25 @@ $pro_url = "https://go.premio.io/checkount/?edd_action=add_to_cart&download_id=2
             <div class="container">
                 <div class="pricing-table">
                     <div class="price-title">Unlock All Features</div>
+                    <div class="pricing-table-header">
+                        <div class="pricing-table-body">
+                            <div class="pricing-table-content first active" data-option="1_year">
+                                <div class="year-col">1 Year</div>
+                                <div class="update-col">Updates &amp; Support</div>
+                                <div class="pricing-discount-col"></div>
+                            </div>
+                            <div class="pricing-table-content second" data-option="2_year">
+                                <div class="year-col">2 Years</div>
+                                <div class="update-col">Updates &amp; Support</div>
+                                <div class="pricing-discount-col"><span>32% off &#128526;</span></div>
+                            </div>
+                            <div class="pricing-table-content third" data-option="lifetime">
+                                <div class="year-col">Lifetime</div>
+                                <div class="update-col">Updates &amp; Support</div>
+                                <div class="pricing-discount-col"><span>63% off &#129395;</span></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="price-tables">
                         <div class="row">
                             <div class="col-md-4 col-sm-12">

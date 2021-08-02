@@ -955,6 +955,7 @@ function pmpro_cancelMembershipLevel( $cancel_level, $user_id = null, $old_level
  * Return values:
  *      Success returns boolean true.
  *      Failure returns boolean false.
+ *		No change returns null.
  */
 function pmpro_changeMembershipLevel( $level, $user_id = null, $old_level_status = 'inactive', $cancel_level = null ) {
 	global $wpdb;
@@ -1115,10 +1116,10 @@ function pmpro_changeMembershipLevel( $level, $user_id = null, $old_level_status
 
 			if ( ! empty( $c_order->error ) ) {
 				$pmpro_error = $c_order->error;
-			} else {
-				if( $old_level_status == 'error' ) {
-					$c_order->updateStatus("error");
-				}
+			}
+			
+			if( $old_level_status == 'error' ) {
+				$c_order->updateStatus("error");
 			}
 		}
 	}
@@ -1375,7 +1376,7 @@ function pmpro_getMembershipCategories( $level_id ) {
 
 
 function pmpro_isAdmin( $user_id = null ) {
-	global $current_user, $wpdb;
+	global $current_user;
 	if ( ! $user_id ) {
 		$user_id = $current_user->ID;
 	}
@@ -2373,9 +2374,9 @@ function pmpro_sort_levels_by_order( $pmpro_levels ) {
 	foreach ( $sort_order as $level_id ) {
 		foreach ( $pmpro_levels as $key => $level ) {
 			if ( ! empty ( $level->id ) && $level_id == $level->id ) {
-				$reordered_levels[] = $pmpro_levels[$key];
+				$reordered_levels[$level_id] = $pmpro_levels[$key];
 			} elseif ( ! empty( $level ) && is_string( $level ) && $level_id == $level ) {
-				$reordered_levels[] = $pmpro_levels[$key];
+				$reordered_levels[$level_id] = $pmpro_levels[$key];
 			}
 		}
 	}

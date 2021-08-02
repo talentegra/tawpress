@@ -3,7 +3,7 @@
 Plugin Name: myStickymenu
 Plugin URI: https://premio.io/
 Description: Simple sticky (fixed on top) menu implementation for navigation menu and Welcome bar for announcements and promotion. After install go to Settings / myStickymenu and change Sticky Class to .your_navbar_class or #your_navbar_id.
-Version: 2.5.1
+Version: 2.5.3
 Author: Premio
 Author URI: https://premio.io/downloads/mystickymenu/
 Text Domain: mystickymenu
@@ -12,7 +12,7 @@ License: GPLv2 or later
 */
 
 defined('ABSPATH') or die("Cannot access pages directly.");
-define( 'MYSTICKY_VERSION', '2.5.1' );
+define( 'MYSTICKY_VERSION', '2.5.3' );
 define('MYSTICKYMENU_URL', plugins_url('/', __FILE__));  // Define Plugin URL
 define('MYSTICKYMENU_PATH', plugin_dir_path(__FILE__));  // Define Plugin Directory Path
 
@@ -700,7 +700,7 @@ class MyStickyMenuBackend
 		if (isset($_POST['mysticky_option_welcomebar']) && !empty($_POST['mysticky_option_welcomebar']) && isset($_POST['nonce'])) {
 			if(!empty($_POST['nonce']) && wp_verify_nonce($_POST['nonce'], 'mysticky_option_welcomebar_update')) {						
 				$mysticky_option_welcomebar = filter_var_array( $_POST['mysticky_option_welcomebar'], FILTER_SANITIZE_STRING );
-				$mysticky_option_welcomebar['mysticky_welcomebar_bar_text'] = $_POST['mysticky_option_welcomebar']['mysticky_welcomebar_bar_text'];
+				$mysticky_option_welcomebar['mysticky_welcomebar_bar_text'] = wp_kses_post($_POST['mysticky_option_welcomebar']['mysticky_welcomebar_bar_text']);
 				$mysticky_option_welcomebar['mysticky_welcomebar_height'] = 60;
 				$mysticky_option_welcomebar['mysticky_welcomebar_device_desktop'] = 'desktop';
 				$mysticky_option_welcomebar['mysticky_welcomebar_device_mobile'] = 'mobile';
@@ -1034,49 +1034,63 @@ class MyStickyMenuBackend
 			}
 			$domain = site_url();
 			$user_name = $current_user->first_name . " " . $current_user->last_name;
-			$subject = "My Sticky Menu was removed from {$domain}";
-			$headers = "MIME-Version: 1.0\r\n";
-			$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-			$headers .= 'From: ' . $user_name . ' <' . $email . '>' . PHP_EOL;
-			$headers .= 'Reply-To: ' . $user_name . ' <' . $email . '>' . PHP_EOL;
-			$headers .= 'X-Mailer: PHP/' . phpversion();
-			ob_start();
-			?>
-			<table border="0" cellspacing="0" cellpadding="5">
-				<tr>
-					<th>Plugin</th>
-					<td>My Sticky Menu</td>
-				</tr>
-				<tr>
-					<th>Plugin Version</th>
-					<td><?php echo $plugin_info['Version']; ?></td>
-				</tr>
-				<tr>
-					<th>Domain</th>
-					<td><?php echo $domain ?></td>
-				</tr>
-				<tr>
-					<th>Email</th>
-					<td><?php echo $email ?></td>
-				</tr>
-				<tr>
-					<th>Reason</th>
-					<td><?php echo nl2br($postData['reason']) ?></td>
-				</tr>
-				<tr>
-					<th>WordPress Version</th>
-					<td><?php echo get_bloginfo('version') ?></td>
-				</tr>
-				<tr>
-					<th>PHP Version</th>
-					<td><?php echo PHP_VERSION ?></td>
-				</tr>
-			</table>
-			<?php
-			$content = ob_get_clean();
-			$to = "gal@premio.io,karina@premio.io";
-			wp_mail($to, $subject, $content, $headers);
+
 			$response['status'] = 1;
+
+			/* sending message to Crisp */
+			$post_message = array();
+
+			$message_data = array();
+			$message_data['key'] = "Plugin";
+			$message_data['value'] = "My Sticky Menu";
+			$post_message[] = $message_data;
+
+			$message_data = array();
+			$message_data['key'] = "Plugin Version";
+			$message_data['value'] = $plugin_info['Version'];
+			$post_message[] = $message_data;
+
+			$message_data = array();
+			$message_data['key'] = "Domain";
+			$message_data['value'] = $domain;
+			$post_message[] = $message_data;
+
+			$message_data = array();
+			$message_data['key'] = "Email";
+			$message_data['value'] = $email;
+			$post_message[] = $message_data;
+
+			$message_data = array();
+			$message_data['key'] = "WordPress Version";
+			$message_data['value'] = esc_attr(get_bloginfo('version'));
+			$post_message[] = $message_data;
+
+			$message_data = array();
+			$message_data['key'] = "PHP Version";
+			$message_data['value'] = PHP_VERSION;
+			$post_message[] = $message_data;
+
+			$message_data = array();
+			$message_data['key'] = "Message";
+			$message_data['value'] = $postData['reason'];
+			$post_message[] = $message_data;
+
+			$api_params = array(
+				'domain' => $domain,
+				'email' => $email,
+				'url' => site_url(),
+				'name' => $user_name,
+				'message' => $post_message,
+				'plugin' => "My Sticky Menu",
+				'type' => "Uninstall",
+			);
+
+			/* Sending message to Crisp API */
+			$crisp_response = wp_safe_remote_post("https://go.premio.io/crisp/crisp-send-message.php", array('body' => $api_params, 'timeout' => 15, 'sslverify' => true));
+
+			if (is_wp_error($crisp_response)) {
+				wp_safe_remote_post("https://go.premio.io/crisp/crisp-send-message.php", array('body' => $api_params, 'timeout' => 15, 'sslverify' => false));
+			}
 		}
 		echo json_encode($response);
 		wp_die();

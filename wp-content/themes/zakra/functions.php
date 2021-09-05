@@ -218,7 +218,7 @@ define( 'ZAKRA_THEME_VERSION', $zakra_theme->get( 'Version' ) );
 
 // AMP support files.
 if ( defined( 'AMP__VERSION' ) && ( ! version_compare( AMP__VERSION, '1.0.0', '<' ) ) ) {
-	require_once ZAKRA_PARENT_INC_DIR . '/compatibility/amp/amp.php';
+	require_once ZAKRA_PARENT_INC_DIR . '/compatibility/amp/class-zakra-amp.php';
 }
 
 /**
@@ -236,12 +236,12 @@ require ZAKRA_PARENT_INC_DIR . '/class-zakra-migration.php';
 
 // Load Jetpack compatibility file.
 if ( defined( 'JETPACK__VERSION' ) ) {
-	require ZAKRA_PARENT_INC_DIR . '/jetpack.php';
+	require ZAKRA_PARENT_INC_DIR . '/class-zakra-jetpack.php';
 }
 
 // WooCommerce hooks and functions.
 if ( class_exists( 'WooCommerce' ) ) {
-	require ZAKRA_PARENT_INC_DIR . '/woocommerce.php';
+	require ZAKRA_PARENT_INC_DIR . '/compatibility/woocommerce/class-zakra-woocommerce.php';
 }
 
 // Load hooks.
@@ -253,6 +253,9 @@ require ZAKRA_PARENT_INC_DIR . '/hooks/customize.php';
 
 // Breadcrumbs class.
 require_once ZAKRA_PARENT_INC_DIR . '/class-breadcrumb-trail.php';
+
+// Elementor Pro compatibility.
+require_once ZAKRA_PARENT_INC_DIR . '/compatibility/elementor/class-zakra-elementor-pro.php';
 
 // Admin screen.
 if ( is_admin() ) {

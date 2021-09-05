@@ -24,6 +24,8 @@ $digital_books_loader->digital_books_register();
  */
 function digital_books_setup() {
 
+	add_theme_support( 'responsive-embeds' );
+
 	add_theme_support( 'woocommerce' );
 	
 	// Add default posts and comments RSS feed links to head.

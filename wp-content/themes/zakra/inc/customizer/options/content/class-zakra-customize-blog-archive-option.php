@@ -133,7 +133,7 @@ if ( ! class_exists( 'Zakra_Customize_Blog_Archive_Option' ) ) :
 					'default'    => 'left',
 					'type'       => 'control',
 					'control'    => 'zakra-radio-image',
-					'label'      => esc_html__( 'Enable Read More', 'zakra' ),
+					'label'      => esc_html__( 'Read More Style', 'zakra' ),
 					'section'    => 'zakra_archive_blog',
 					'priority'   => 105,
 					'image_col'  => 2,
@@ -150,19 +150,21 @@ if ( ! class_exists( 'Zakra_Customize_Blog_Archive_Option' ) ) :
 							),
 						)
 					),
-
 					'dependency' => array(
-						'conditions' => array(
+						'conditions' => apply_filters(
+							'zakra_read_more_align_dependency',
 							array(
-								'zakra_post_content_archive_blog',
-								'==',
-								'excerpt',
-							),
-							array(
-								'zakra_enable_read_more_archive_blog',
-								'==',
-								true,
-							),
+								array(
+									'zakra_post_content_archive_blog',
+									'==',
+									'excerpt',
+								),
+								array(
+									'zakra_enable_read_more_archive_blog',
+									'==',
+									true,
+								),
+							)
 						),
 						'operator'   => 'AND',
 					),
@@ -255,7 +257,6 @@ if ( ! class_exists( 'Zakra_Customize_Blog_Archive_Option' ) ) :
 					'transport'   => 'postMessage',
 					'priority'    => 286,
 				),
-
 
 			);
 

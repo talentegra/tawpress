@@ -4,8 +4,8 @@ Theme URI: https://zakratheme.com/
 Author: ThemeGrill
 Author URI: https://themegrill.com
 Description: Zakra is flexible, fast, lightweight and modern multipurpose theme that comes with many starter free sites (currently 10+ free starter sites and more will be added later) that you can use to make your site beautiful and professional. Check all the starter sites at https://zakratheme.com/demos. Suitable for personal blog, portfolio, WooCommerce stores, business websites and niche-based sites (like Cafe, Spa, Charity, Yoga, Wedding, Dentist, Education etc) as well. Works with Elementor plus other major page builders so you can create any layout you want. The theme is responsive, Gutenberg compatible, SEO friendly, translation ready and major WordPress plugins compatible.
-Version: 2.0.1
-Tested up to: 5.7.2
+Version: 2.0.3
+Tested up to: 5.8
 Requires PHP: 5.6
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -690,6 +690,10 @@ body.has-transparent-header.elementor-editor-active .tg-site-header {
 	flex-direction: column;
 }
 
+.tg-page-header.tg-page-header--both-center .tg-page-header__title {
+	text-align: center;
+}
+
 .tg-page-header.tg-page-header--right-left .tg-page-header__title {
 	-webkit-box-ordinal-group: 3;
 	-ms-flex-order: 2;
@@ -902,11 +906,6 @@ a:active {
 
 .tg-primary-menu > div ul li.current_page_ancestor > a, .tg-primary-menu > div ul li.current-menu-ancestor > a, .tg-primary-menu > div ul li.current_page_item > a, .tg-primary-menu > div ul li.current-menu-item > a {
 	color: #269bd1;
-}
-.main-navigation.tg-primary-menu > div ul li.tg-header-button-wrap a {
-border-radius: 30px;
-background-color:#00519D !important;
-color:#fff !important;
 }
 
 .tg-primary-menu > div ul li:hover > a {
@@ -1457,6 +1456,32 @@ color:#fff !important;
 }
 
 /*=============================================
+=            Infinite Scroll            =
+=============================================*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll .tg-numbered-pagination,
+.infinite-scroll.neverending .site-footer {
+	display: none;
+}
+
+/*Display element when scroll ends. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+#infinite-handle span {
+	border: 0 solid #e9ecef;
+	background-color: #269bd1;
+	color: #fff;
+	padding: 0.7rem 1rem;
+}
+
+#infinite-handle span:hover {
+	background-color: #1e7ba6;
+}
+
+/*=============================================
 =            Clearings            =
 =============================================*/
 .clear::before,
@@ -1734,11 +1759,6 @@ select {
 .site-branding .site-title {
 	font-family: -apple-system, blinkmacsystemfont, "segoe ui", roboto, "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial, sans-serif;
 	margin: 0;
-}
-
-.site-branding img 
-{
-width:200px;
 }
 
 .wp-custom-header img {
@@ -2527,10 +2547,10 @@ body .tg-oembed-container * {
 	.tg-site-footer .tg-footer-widget-container.tg-footer-widget-col--two .tg-footer-widget-area, .tg-site-footer .tg-footer-widget-container.tg-footer-widget-col--three .tg-footer-widget-area, .tg-site-footer .tg-footer-widget-container.tg-footer-widget-col--four .tg-footer-widget-area {
 		width: 100%;
 	}
-	.tg-menu-item-cart .cart-page-link {
+	.tg-block--two .tg-menu-item-cart .cart-page-link {
 		display: inline-block;
 	}
-	.tg-menu-item-cart .cart-page-link .count {
+	.tg-block--two .tg-menu-item-cart .cart-page-link .count {
 		top: 0;
 		right: 20px;
 	}

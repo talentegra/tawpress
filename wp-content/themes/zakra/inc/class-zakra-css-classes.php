@@ -223,7 +223,11 @@ if ( ! class_exists( 'Zakra_Css_Classes' ) ) :
 
 			$meta_css .= apply_filters( 'zakra_meta_box_style', false );
 
-			wp_add_inline_style( 'zakra-style', $meta_css );
+			if ( zakra_is_zakra_pro_active() ) {
+				wp_add_inline_style( 'zakra-pro', $meta_css );
+			} else {
+				wp_add_inline_style( 'zakra-style', $meta_css );
+			}
 		}
 
 	}

@@ -26,7 +26,7 @@ define( 'DB_NAME', 'tawpress' );
 define( 'DB_USER', 'kcc' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'Telephone1' );
+define( 'DB_PASSWORD', 'pYUQoVPYenZ9HNc' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );

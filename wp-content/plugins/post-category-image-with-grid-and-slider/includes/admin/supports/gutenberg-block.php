@@ -236,4 +236,4 @@ function pciwgas_add_block_category( $categories ) {
 
 	return $categories;
 }
-add_filter( 'block_categories', 'pciwgas_add_block_category' );
+add_filter( 'block_categories_all', 'pciwgas_add_block_category' );

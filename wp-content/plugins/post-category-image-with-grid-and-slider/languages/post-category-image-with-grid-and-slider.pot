@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Post Category Image With Grid and Slider\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-14 09:14+0000\n"
+"POT-Creation-Date: 2021-08-20 10:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -15,37 +15,66 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.4.0; wp-5.4.2"
 
-#: includes/admin/class-pciwgas-admin.php:36
+#: includes/admin/class-pciwgas-admin.php:37
 msgid "Category Image"
 msgstr ""
 
-#: includes/admin/settings/settings.php:16
-msgid "Category Image Settings"
-msgstr ""
-
-#: includes/admin/form-field/add-form.php:16
+#: includes/class-pciwgas-script.php:49
+#: includes/admin/form-field/add-form.php:17
 msgid "Choose Category Image"
 msgstr ""
 
-#: includes/admin/form-field/add-form.php:17
-#: includes/admin/form-field/edit-form.php:26
+#: includes/class-pciwgas-script.php:50
+msgid "Choose Image"
+msgstr ""
+
+#: includes/admin/form-field/add-form.php:18
+#: includes/admin/form-field/edit-form.php:27
 msgid "Clear"
 msgstr ""
 
-#: includes/admin/settings/settings.php:53
-msgid "Enable custom image option on selected categories"
+#: includes/admin/settings/settings.php:96
+msgid "Display categories in grid view"
 msgstr ""
 
-#: includes/admin/settings/settings.php:95
+#: includes/admin/settings/settings.php:98
+msgid "Display categories in slider view"
+msgstr ""
+
+#: includes/admin/settings/settings.php:83
 msgid "How it Work"
 msgstr ""
 
 #. Author URI of the plugin
-msgid "https://www.wponlinesupport.com"
+msgid "https://www.essentialplugin.com/"
 msgstr ""
 
 #. URI of the plugin
-msgid "https://www.wponlinesupport.com/plugins"
+msgid ""
+"https://www.essentialplugin.com/wordpress-plugin/post-category-image-grid-"
+"slider/"
+msgstr ""
+
+#: post-category-image-with-grid-and-slider.php:180
+#, php-format
+msgid ""
+"It looks like you had Pro version %s of this plugin activated. To avoid "
+"conflicts the extra version has been deactivated and we recommend you delete "
+"it."
+msgstr ""
+
+#: includes/shortcode/pciwgas-grid.php:23
+#: includes/shortcode/pciwgas-grid.php:31
+msgid "Post Category Image Grid - Shortcode"
+msgstr ""
+
+#: includes/admin/settings/settings.php:17
+msgid "Post Category Image Grid and Slider - Settings"
+msgstr ""
+
+#: includes/shortcode/pciwgas-slider.php:23
+#: includes/shortcode/pciwgas-slider.php:31
+msgid "Post Category Image Slider - Shortcode"
 msgstr ""
 
 #. Name of the plugin
@@ -63,39 +92,58 @@ msgid ""
 "Gutenberg shortcode block."
 msgstr ""
 
-#: includes/admin/settings/settings.php:74
+#: includes/admin/settings/settings.php:70
 msgid "Save Changes"
 msgstr ""
 
-#: includes/admin/settings/settings.php:45
-msgid "Select categories option"
+#: includes/admin/settings/settings.php:65
+msgid ""
+"Select taxonomy box to enable support. Custom settings on category listing "
+"page will be enabled for selected categories."
 msgstr ""
 
-#: includes/admin/class-pciwgas-admin.php:39
+#: includes/admin/settings/settings.php:50
+msgid "Taxonomy"
+msgstr ""
+
+#: includes/admin/settings/settings.php:40
+msgid "Taxonomy Settings"
+msgstr ""
+
+#: post-category-image-with-grid-and-slider.php:179
+#, php-format
+msgid "Thank you for activating %s"
+msgstr ""
+
+#: includes/admin/class-pciwgas-admin.php:40
 msgid "Upgrade to PRO"
 msgstr ""
 
-#: includes/admin/class-pciwgas-admin.php:39
+#: includes/admin/class-pciwgas-admin.php:40
 msgid "Upgrade to PRO - Post Category Image With Grid and Slider"
 msgstr ""
 
-#: includes/admin/form-field/add-form.php:20
-#: includes/admin/form-field/edit-form.php:29
+#: includes/admin/form-field/add-form.php:21
+#: includes/admin/form-field/edit-form.php:30
 msgid "Upload / Choose category image."
 msgstr ""
 
-#: includes/admin/form-field/add-form.php:17
-#: includes/admin/form-field/edit-form.php:24
-#: includes/admin/form-field/edit-form.php:26
+#: includes/admin/form-field/add-form.php:18
+#: includes/admin/form-field/edit-form.php:25
+#: includes/admin/form-field/edit-form.php:27
 msgid "Upload Image"
 msgstr ""
 
-#: includes/admin/settings/settings.php:103
+#: includes/admin/settings/settings.php:93
 msgid "Use the shortcode"
 msgstr ""
 
 #. Author of the plugin
 msgid "WP OnlineSupport"
+msgstr ""
+
+#: includes/admin/supports/gutenberg-block.php:232
+msgid "WPOS Blocks"
 msgstr ""
 
 #: includes/admin/settings/settings.php:22

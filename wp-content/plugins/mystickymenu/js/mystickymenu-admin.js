@@ -19,10 +19,10 @@
 				}
 			})
 		});
-		
+
 		var handle = $( "#custom-handle" );
 		$( "#slider" ).slider({
-		  create: function() {			 
+		  create: function() {
 			handle.text( $( this ).slider( "value" ) );
 			handle.text( $('#myfixed_opacity').val() );
 			handle.css('left', $('#myfixed_opacity').val() + '%')
@@ -79,7 +79,7 @@
 
 		var flag = 0;
 		$( "#mystickymenu-select option" ).each(function( i ) {
-			
+
 			if ($('select#mystickymenu-select option:selected').val() !== '' ) {
 				flag = 1;
 			}
@@ -93,7 +93,7 @@
 			$('#mysticky_class_selector').show();
 			$("select#mystickymenu-select option[value=custom]").attr('selected', 'selected');
 		}
-		
+
 		$("#mystickymenu-select").on( 'change', function() {
 			if ($(this).val() == 'custom' ) {
 				$('#mysticky_class_selector').show();
@@ -111,6 +111,11 @@
 			} else {
 				$( '.mysticky-welcomebar-redirect' ).hide();
 				$( '.mysticky-welcomebar-redirect-container' ).hide();
+			}
+			if ( mysticky_welcomebar_action == 'poptin_popup' ) {
+				$( '.mysticky-welcomebar-poptin-popup' ).show();
+			} else {
+				$( '.mysticky-welcomebar-poptin-popup' ).hide();
 			}
 			if ( $('.mysticky-welcomebar-action option:selected').attr('data-href') !== '' && mysticky_welcomebar_action == 'thankyou_screen' ) {
 				window.open( $( '.mysticky-welcomebar-action option:selected' ).attr('data-href') , '_blank');
@@ -147,13 +152,13 @@
 	    $( '.mysticky-page-options-html' ).remove();
 
 	    $( '#mysticky_create-rule' ).on( 'click', function(){
-	    	
+
 	        var append_html = mysticky_page_option_content.replace(/__count__/g, mysticky_total_page_option, mysticky_page_option_content);
 	        mysticky_total_page_option++;
 	        $( '.mysticky-page-options' ).append( append_html );
 	        $( '.mysticky-page-options .mysticky-page-option' ).removeClass( 'last' );
 	        $( '.mysticky-page-options .mysticky-page-option:last' ).addClass( 'last' );
-			
+
 			if( $( '.mysticky-page-option .myStickymenu-upgrade' ).length > 0 ) {
 				$( this ).remove();
 			}
@@ -184,8 +189,8 @@
 			change: function(event, ui){
 				var color_id = $(this).attr('id');
 				var slug = $(this).data('slug');
-				
-				var color_code = ui.color.toString();				
+
+				var color_code = ui.color.toString();
 				if ( color_id === 'mysticky_welcomebar_bgcolor'){
 					$('.mysticky-welcomebar-fixed').css('background-color', color_code );
 				}
@@ -278,17 +283,17 @@
 			$( '.mysticky-welcomebar-fixed p' ).css( 'font-size', mysticky_welcomebar_fontsize_val + 'px' );
 			$( '.mysticky-welcomebar-btn a' ).css( 'font-size', mysticky_welcomebar_fontsize_val + 'px' );
 		} );
-		
+
 		$( '#wp-mysticky_bar_text-wrap .wp-editor-tabs button' ).on( 'click', function(){
 			if ( $("#wp-mysticky_bar_text-wrap").hasClass("tmce-active") ){
 
 			}
 		} );
-		
+
 		$( document ).on( 'click', '#qt_mysticky_bar_text_toolbar .ed_button', function(){
 			$( 'textarea[name="mysticky_option_welcomebar[mysticky_welcomebar_bar_text]"]' ).trigger( 'change keyup click' );
 		} );
-		
+
 		$( 'textarea[name="mysticky_option_welcomebar[mysticky_welcomebar_bar_text]"]' ).on( 'change keyup click', function(e){
 			var mysticky_bar_text_val = $( this ).val().replace(/(?:\r\n|\r|\n)/g, '<br />');
 			$( '.mysticky-welcomebar-content' ).html( "<p>" + mysticky_bar_text_val + "</p>");
@@ -296,17 +301,17 @@
 
 		$( 'input[name="mysticky_option_welcomebar[mysticky_welcomebar_btn_text]"]' ).on( 'keyup', function(){
 			var mysticky_btn_text_val = $( this ).val();
-			
+
 			$( '.mysticky-welcomebar-btn a' ).text( mysticky_btn_text_val );
 		} );
-		
+
 		/* DATE: 11-12-2019 start */
-		$( 'select[name="mysticky_option_welcomebar[mysticky_welcomebar_attentionselect]"]' ).on( 'change', function(){ 
+		$( 'select[name="mysticky_option_welcomebar[mysticky_welcomebar_attentionselect]"]' ).on( 'change', function(){
 			$(".mysticky-welcomebar-fixed").removeClass (function (index, className) {
 				return (className.match (/(^|\s)mysticky-welcomebar-attention-\S+/g) || []).join(' ');
 			});
 			$( '.mysticky-welcomebar-fixed' ).addClass( 'mysticky-welcomebar-attention-' + $(this).val() );
-			
+
 		} );
 		/* DATE: 11-12-2019 End */
 		$("#myStickymenu-entry-effect").on( 'change', function() {
@@ -321,8 +326,43 @@
 
 		});
 		$( '.mysticky-welcomebar-fixed' ).addClass( 'entry-effect' );
-		
+
 		$( '.mysticky-welcomebar-submit input#submit' ).on( 'click', function(e){
+			var welcomebar_action = $('.mysticky-welcomebar-action').find(":selected").val();
+			var poptin_popup_link = $('#mysticky_welcomebar_poptin_popup_link').val().toLowerCase();
+			var welcome_save_anyway = $('#welcome_save_anyway').val();
+			console.log(poptin_popup_link);
+			if ( welcomebar_action == 'poptin_popup' &&  welcome_save_anyway == '' && (poptin_popup_link == '' || poptin_popup_link.indexOf('popt.in') == '-1' ) ) {
+				e.preventDefault();
+				$( "#mysticky-welcomebar-poptin-popup-confirm" ).dialog({
+					resizable: false,
+					modal: true,
+					draggable: false,
+					height: 'auto',
+					width: 500,
+					buttons: {
+						"Keep editing": {
+							click:function () {
+								$( this ).dialog('close');
+								$("body,html").animate({
+									scrollTop: $("#mysticky_welcomebar_poptin_popup_link").offset().top - 200
+									}, 500)
+								$('#mysticky_welcomebar_poptin_popup_link').focus();
+								$('#mysticky_welcomebar_poptin_popup_link').css( 'border', '1px solid #FF0000' );
+							},
+							text: 'Keep editing',
+	                    	class: 'green-btn'
+						},
+						"Save anyway": function () {
+							$( 'input#welcome_save_anyway' ).val('1');
+							$( '.mysticky-welcomebar-submit input#submit' ).trigger('click');
+							$( this ).dialog( 'close' );
+						}
+					}
+				});
+				return false;
+			}
+
 			if ( $( 'input[name="mysticky_option_welcomebar[mysticky_welcomebar_enable]"]' ).prop( 'checked' ) == false && $( 'input#save_welcome_bar' ).val() == '' ) {
 				e.preventDefault();
 				$( "#mysticky-welcomebar-save-confirm" ).dialog({

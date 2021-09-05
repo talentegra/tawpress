@@ -5,13 +5,13 @@ Author: TheMagnifico52
 Theme URI: https://www.themagnifico.net/themes/free-books-wordpress-theme/
 Author URI: https://www.themagnifico.net/
 Description: Digital Books is a perfect theme for book store, education, author, selling ebooks, PDFs online, journalists, editors, publishers, course providers, online book stores, literature, library, comic book store, copywriter, journal, publisher, story, caters education, teachers, institutes, bookstore, book keeper, comic-con, comic subscription, marvel avengers, training academy, coaching centre, LMS, guidance, counselling centre, e-learning, kindergartens, playschools, book landing, book-storage, book series, copywriter and primary school websites. The theme has an eye-catching, sophisticated and modern design that your visitors will surely like.It has many options for customization and personalization to get you exactly the website you like. It is SEO-friendly theme that will help your website rank soon on major search engines like Google. It is implemented on bootstrap framework. You have the option to include shortcodes that will improve the functionality of your website. Also, it is a translation-ready theme that supports many local and international languages with RTL layout. The theme has faster page load time and optimized codes. The design is responsive so it can be viewed on any device. You can link all your social media pages to give credibility to your work.
-Version: 0.1.5
-Tested up to: 5.7
+Version: 0.1.7
+Tested up to: 5.8
 Requires PHP: 7.2.14
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: digital-books
-Tags: custom-logo, one-column, two-columns, wide-blocks, block-styles, sticky-post, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, threaded-comments, left-sidebar, right-sidebar, blog, e-commerce, portfolio
+Tags: custom-logo, one-column, two-columns, wide-blocks, block-styles, editor-style, sticky-post, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, threaded-comments, theme-options, rtl-language-support, left-sidebar, right-sidebar, grid-layout, blog, e-commerce, portfolio
 
 Digital Books WordPress Theme has been created by The Magnifico(themagnifico.net), 2019.
 Digital Books WordPress Theme is released under the terms of GNU GPL
@@ -295,7 +295,7 @@ figure {
   text-align: center;
   border-radius: 4px;
   position: fixed;
-  bottom: 30px;
+  bottom: 10px;
   right: 30px;
   transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
@@ -686,7 +686,7 @@ textarea {
 span.woocommerce-input-wrapper,
 .checkout label,
 .woocommerce-account .woocommerce-MyAccount-navigation,
-.woocommerce-account .woocommerce-MyAccount-content,.woocommerce form .form-row label,span.password-input {
+.woocommerce-account .woocommerce-MyAccount-content,.woocommerce form .form-row label,span.password-input,header.page-header,nav.navigation.posts-navigation {
   width: 100%;
 }
 .woocommerce-account .woocommerce-MyAccount-navigation ul {
@@ -717,6 +717,10 @@ h2.woocommerce-loop-product__title {
 .woocommerce ul.products li.product .button{
   margin-top: 0;
 }
+.woocommerce .col-1, .woocommerce .col-2 {
+  max-width: 100%;
+}
+
 
 /*--------------------------------------------------------------
 ## Menus

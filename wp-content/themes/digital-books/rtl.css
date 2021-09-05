@@ -2,7 +2,6 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
-
 body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
@@ -264,6 +263,39 @@ figure {
 .page-template-home-template .main_header{
   background: transparent;
 }
+
+/*--------------------------------------------------------------
+# Scroll Back
+--------------------------------------------------------------*/
+#button {
+  display: inline-block;
+  background-color: #fbb703;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 10px;
+  left: 30px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  padding: 15px 0;
+  font-weight: bold;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #000000;
+}
+#button:active {
+  background-color: #000000;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 /*--------------------------------------------------------------
 # Form
 --------------------------------------------------------------*/
@@ -634,7 +666,7 @@ textarea {
 span.woocommerce-input-wrapper,
 .checkout label,
 .woocommerce-account .woocommerce-MyAccount-navigation,
-.woocommerce-account .woocommerce-MyAccount-content,.woocommerce form .form-row label,span.password-input {
+.woocommerce-account .woocommerce-MyAccount-content,.woocommerce form .form-row label,span.password-input,header.page-header,nav.navigation.posts-navigation {
   width: 100%;
 }
 .woocommerce-account .woocommerce-MyAccount-navigation ul {
@@ -1047,8 +1079,6 @@ a img .aligncenter {
   color: #fff;
 }
 #colophon a {
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
   color: #fff;
 }
 #colophon a:hover, #colophon a:focus {

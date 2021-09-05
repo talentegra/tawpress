@@ -1,12 +1,12 @@
 === Digital Books ===
 Contributors: TheMagnifico52
 Requires at least: 5.0
-Tested up to: 5.7
+Tested up to: 5.8
 Requires PHP: 7.2.14
-Stable tag: 0.1.5
+Stable tag: 0.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: custom-logo, one-column, two-columns, wide-blocks, block-styles, sticky-post, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, threaded-comments, left-sidebar, right-sidebar, blog, e-commerce, portfolio
+Tags: custom-logo, one-column, two-columns, wide-blocks, block-styles, editor-style, sticky-post, custom-background, custom-colors, custom-header, custom-menu, featured-images, flexible-header, full-width-template, threaded-comments, theme-options, rtl-language-support, left-sidebar, right-sidebar, grid-layout, blog, e-commerce, education
 
 Digital Books is a perfect theme for book store, education, author, selling ebooks, PDFs online, journalists, editors, publishers, course providers, online book stores, literature, copywriter, journal, publisher, story, caters education, teachers, institutes, training academy, coaching centre, LMS, guidance, counselling centre, e-learning, kindergartens, playschools, and primary school websites.
 
@@ -124,3 +124,13 @@ Pxhere Images,
 
 * Added theme color option.
 * Added scroll back.
+
+= 0.1.6
+
+* Added new tags.
+* Reolved themes check issue.
+
+= 0.1.7
+
+* Changes in tags.
+* Updated RTL file.

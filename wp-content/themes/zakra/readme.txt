@@ -1,11 +1,11 @@
 === Zakra ===
 Contributors: themegrill
 Author: ThemeGrill
-Version: 2.0.1
-Tested up to: 5.7.2
+Version: 2.0.3
+Tested up to: 5.8
 Requires PHP: 5.6
 Requires at least: 4.7
-Stable tag: 2.0.1
+Stable tag: 2.0.3
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: one-column, two-columns, right-sidebar, grid-layout, custom-background, custom-colors, custom-menu, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, rtl-language-support
@@ -60,6 +60,18 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
+= Version 2.0.3 - 2021-08-16 =
+* Fix - Page header title alignment issue.
+* Fix - Header cart icon design issue in mobile devices while after site identity.
+
+= Version 2.0.2 - 2021-08-05 =
+* Fix         - WooCommerce left sidebar not working properly.
+* Fix         - Posts appearing out of container while Jetpack's infinite scroll is enabled
+* Fix         - Page settings primary menu item color option not affecting individual pages/posts.
+* Fix         - Customizer color control deprecated console warnings.
+* Fix         - Elementor Pro theme builder compatibility issue.
+* Enhancement - Jetpack infinite scroll button styles and text.
+
 = Version 2.0.1 - 2021-06-10 =
 * Fix - Base color not affecting WooCommerce html elements.
 * Fix - Font display swap property and value for google fonts.

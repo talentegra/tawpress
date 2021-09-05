@@ -25,6 +25,23 @@ if ( ! function_exists( 'zakra_is_woocommerce_active' ) ) {
 	}
 }
 
+if ( ! function_exists( 'zakra_is_product_archive' ) ) {
+
+	/**
+	 * Checks if the current page is a product archive
+	 *
+	 * @return bool
+	 */
+	function zakra_is_product_archive() {
+
+		if ( zakra_is_woocommerce_active() && ( is_shop() || is_product_taxonomy() || is_product_category() || is_product_tag() ) ) {
+			return true;
+		}
+
+		return false;
+	}
+}
+
 if ( ! function_exists( 'zakra_is_zakra_pro_active' ) ) {
 
 	/**
@@ -697,5 +714,26 @@ if ( ! function_exists( 'zakra_remove_filters_with_method_name' ) ) :
 				}
 			}
 		}
+	}
+endif;
+
+if ( ! function_exists( 'zakra_get_sidebar_name_by_id' ) ) :
+
+	/**
+	 * Get sidebar name.
+	 *
+	 * @param string $sidebar_id
+	 * @return mixed|string
+	 */
+	function zakra_get_sidebar_name_by_id( $sidebar_id = '' ) {
+
+		global $wp_registered_sidebars;
+		$sidebar_name = '';
+
+		if ( isset( $wp_registered_sidebars[ $sidebar_id ] ) ) {
+			$sidebar_name = $wp_registered_sidebars[ $sidebar_id ]['name'];
+		}
+
+		return $sidebar_name;
 	}
 endif;

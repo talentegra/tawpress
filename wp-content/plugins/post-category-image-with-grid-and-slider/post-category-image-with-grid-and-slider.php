@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: Post Category Image With Grid and Slider
- * Plugin URI: https://www.wponlinesupport.com/plugins
+ * Plugin URI: https://www.essentialplugin.com/wordpress-plugin/post-category-image-grid-slider/
  * Description: Post Category Image With Grid and Slider plugin allow users to upload  category (taxonomy) image and display in grid and slider. Also work with Gutenberg shortcode block. 
- * Author: WP OnlineSupport
- * Author URI: https://www.wponlinesupport.com
+ * Author: WP OnlineSupport, Essential Plugin
+ * Author URI: https://www.essentialplugin.com/
  * Text Domain: post-category-image-with-grid-and-slider
  * Domain Path: languages
- * Version: 1.4
+ * Version: 1.4.1
  * 
  * @package WordPress
  * @author WP OnlineSupport
@@ -27,7 +27,7 @@ if( !defined( 'PCIWGAS_WP_VERSION' ) ) {
 	define( 'PCIWGAS_WP_VERSION', get_bloginfo('version') ); 
 } 
 if( !defined( 'PCIWGAS_VERSION' ) ) {
-	define( 'PCIWGAS_VERSION', '1.4' ); // Version of plugin
+	define( 'PCIWGAS_VERSION', '1.4.1' ); // Version of plugin
 }
 if( !defined( 'PCIWGAS_URL' ) ) {
     define( 'PCIWGAS_URL', plugin_dir_url( __FILE__ ) ); // Plugin url
@@ -43,7 +43,10 @@ if( !defined( 'PCIWGAS_META_PREFIX' ) ) {
 }
 
 if( !defined( 'PCIWGAS_PLUGIN_LINK' ) ) {
-    define( 'PCIWGAS_PLUGIN_LINK', 'https://www.wponlinesupport.com/wp-plugin/post-category-image-grid-slider/?utm_source=WP&utm_medium=Logoshowcase&utm_campaign=Features-PRO' ); // Plugin link
+    define( 'PCIWGAS_PLUGIN_LINK', 'https://www.essentialplugin.com/wordpress-plugin/post-category-image-grid-slider/?utm_source=WP&utm_medium=Logoshowcase&utm_campaign=Features-PRO' ); // Plugin link
+}
+if(!defined( 'PCIWGAS_SITE_LINK' ) ) {
+    define('PCIWGAS_SITE_LINK','https://www.essentialplugin.com'); // Plugin link
 }
 
 /**

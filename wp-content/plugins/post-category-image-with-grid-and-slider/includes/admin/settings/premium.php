@@ -78,7 +78,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	    		<th></th>
 	    		<td></td>
 	    		<td><p>Gain access to <strong>Post Category Image With Grid and Slider</strong> included in <strong>Essential Plugin Bundle</p>
-				<a href="https://www.wponlinesupport.com/pricing/?ref=WposPratik&utm_source=WP&utm_medium=Post-Category-Image&utm_campaign=Upgrade-PRO" class="wpos-button" target="_blank">View Pricing Options</a></td>
+				<a href="<?php echo PCIWGAS_SITE_LINK; ?>/pricing/?utm_source=WP&utm_medium=Post-Category-Image&utm_campaign=Upgrade-PRO" class="wpos-button" target="_blank">View Pricing Options</a></td>
 	    	</tr>
 	    </tfoot>
 

@@ -373,14 +373,14 @@ if ( ! class_exists( 'Zakra_Dynamic_CSS' ) ) {
 			$parse_css             .= zakra_parse_dimension_css(
 				$button_padding_default,
 				$button_padding,
-				'button, input[type="button"], input[type="reset"], input[type="submit"]',
+				'button, input[type="button"], input[type="reset"], input[type="submit"], #infinite-handle span',
 				'padding'
 			);
 
 			// Button text color.
 			$button_text_color     = get_theme_mod( 'zakra_button_text_color', '#ffffff' );
 			$button_text_color_css = array(
-				'button, input[type="button"], input[type="reset"], input[type="submit"]' => array(
+				'button, input[type="button"], input[type="reset"], input[type="submit"], #infinite-handle span' => array(
 					'color' => esc_html( $button_text_color ),
 				),
 			);
@@ -389,7 +389,7 @@ if ( ! class_exists( 'Zakra_Dynamic_CSS' ) ) {
 			// Button hover text color.
 			$button_hover_text_color     = get_theme_mod( 'zakra_button_text_hover_color', '#ffffff' );
 			$button_hover_text_color_css = array(
-				'button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover' => array(
+				'button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, #infinite-handle span:hover' => array(
 					'color' => esc_html( $button_hover_text_color ),
 				),
 			);
@@ -398,7 +398,7 @@ if ( ! class_exists( 'Zakra_Dynamic_CSS' ) ) {
 			// Button background color.
 			$button_bg_color     = get_theme_mod( 'zakra_button_bg_color', '#269bd1' );
 			$button_bg_color_css = array(
-				'button, input[type="button"], input[type="reset"], input[type="submit"]' => array(
+				'button, input[type="button"], input[type="reset"], input[type="submit"], #infinite-handle span' => array(
 					'background-color' => esc_html( $button_bg_color ),
 				),
 			);
@@ -407,7 +407,7 @@ if ( ! class_exists( 'Zakra_Dynamic_CSS' ) ) {
 			// Button background hover color.
 			$button_bg_hover_color     = get_theme_mod( 'zakra_button_bg_hover_color', '#1e7ba6' );
 			$button_bg_hover_color_css = array(
-				'button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover' => array(
+				'button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, #infinite-handle span:hover' => array(
 					'background-color' => esc_html( $button_bg_hover_color ),
 				),
 			);
@@ -416,7 +416,7 @@ if ( ! class_exists( 'Zakra_Dynamic_CSS' ) ) {
 			// Button border roundness.
 			$button_border_radius     = get_theme_mod( 'zakra_button_roundness', 0 );
 			$button_border_radius_css = array(
-				'button, input[type="button"], input[type="reset"], input[type="submit"]' => array(
+				'button, input[type="button"], input[type="reset"], input[type="submit"], #infinite-handle span' => array(
 					'border-radius' => esc_html( $button_border_radius ) . 'px',
 				),
 			);

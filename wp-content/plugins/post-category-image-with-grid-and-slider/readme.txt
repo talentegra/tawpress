@@ -1,9 +1,9 @@
 === Post Category Image With Grid and Slider ===
-Contributors: wponlinesupport, anoopranawat, pratik-jain
+Contributors: wponlinesupport, anoopranawat, pratik-jain, piyushpatel123, ridhimashukla, patelketan
 Tags: category, category image, post category image, post category image grid, post category image slider, customization, custom category image, category featured image, category grid, category slider, wponlinesupport
 Requires at least: 3.5
-Tested up to: 5.7.1
-Author URI: https://www.wponlinesupport.com
+Tested up to: 5.8
+Author URI: https://www.essentialplugin.com
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,7 @@ Post Category Image With Grid and Slider plugin allow users to upload  category 
 
 Post Category Image With Grid and Slider plugin allow users to upload  category image and display in grid and slider.
 
-Check [Features and Demo](https://www.wponlinesupport.com/wp-plugin/post-category-image-grid-slider/) for additional information.
+Check [Features and Demo](https://www.essentialplugin.com/pricing/) for additional information.
 
 **Also work with Gutenberg shortcode block.** 
 
@@ -130,7 +130,7 @@ exclude_cat="" ( Exclude specific Category id. Values are Comma separated Catego
 > * 100% Responsive
 > * Slide RTL Support
 >
-> Check [Demo and Features](https://www.wponlinesupport.com/wp-plugin/post-category-image-grid-slider/) for additional information.
+> Check [Demo and Features](https://www.essentialplugin.com/wordpress-plugin/post-category-image-grid-slider/) for additional information.
 >
 
 == Installation ==
@@ -152,6 +152,12 @@ exclude_cat="" ( Exclude specific Category id. Values are Comma separated Catego
 3. Output in Grid and Slider.
 
 == Changelog ==
+
+= 1.4.1 (23, Aug 2021) =
+* [*] Updated all external links
+* [*] Tweak - Code optimization and performance improvements.
+* [*] Fixed - Blocks Initializer Issue.
+* [*] Updated language file and json.
 
 = 1.4 (19, Jan 2020) =
 * [+] New - Added Gutenberg block support. Now use plugin easily with Gutenberg!
